@@ -1,0 +1,6598 @@
+{
+    "id": "00000000-0000-0000-0000-000000000000",
+    "revision": 0,
+    "last_node_id": 104,
+    "last_link_id": 100,
+    "nodes": [
+        {
+            "id": 1,
+            "type": "GeomPackPreviewMesh",
+            "pos": [
+                -940,
+                -740
+            ],
+            "size": [
+                512,
+                542
+            ],
+            "flags": {},
+            "order": 45,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 1
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                ""
+            ]
+        },
+        {
+            "id": 4,
+            "type": "PreviewImage",
+            "pos": [
+                -1260,
+                -350
+            ],
+            "size": [
+                250.0000000000001,
+                276.79999999999995
+            ],
+            "flags": {},
+            "order": 47,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "images",
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 3
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.75",
+                "Node name for S&R": "PreviewImage",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 6,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                2478.829727228755,
+                1009.4530684507497
+            ],
+            "size": [
+                802,
+                848
+            ],
+            "flags": {},
+            "order": 64,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 5
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 6
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 8,
+            "type": "GeomPackMeshInfo",
+            "pos": [
+                60,
+                -590
+            ],
+            "size": [
+                140,
+                26
+            ],
+            "flags": {},
+            "order": 42,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 85
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": [
+                        10
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "965ab7207dc46106186002dd5cbc20dd260e815a",
+                "Node name for S&R": "GeomPackMeshInfo",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 10,
+            "type": "GeomPackMeshQuality",
+            "pos": [
+                0,
+                -490
+            ],
+            "size": [
+                272.744140625,
+                122
+            ],
+            "flags": {},
+            "order": 43,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 86
+                },
+                {
+                    "localized_name": "include_face_quality",
+                    "name": "include_face_quality",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "include_face_quality"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "include_edge_stats",
+                    "name": "include_edge_stats",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "include_edge_stats"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "min_quality",
+                    "name": "min_quality",
+                    "type": "FLOAT",
+                    "links": []
+                },
+                {
+                    "localized_name": "mean_quality",
+                    "name": "mean_quality",
+                    "type": "FLOAT",
+                    "links": null
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        9
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "965ab7207dc46106186002dd5cbc20dd260e815a",
+                "Node name for S&R": "GeomPackMeshQuality",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "true",
+                "true"
+            ]
+        },
+        {
+            "id": 13,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                -670,
+                970
+            ],
+            "size": [
+                768,
+                834
+            ],
+            "flags": {},
+            "order": 72,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 11
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 72
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 16,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                -698.6157162327899,
+                2608.5409072168304
+            ],
+            "size": [
+                768,
+                834
+            ],
+            "flags": {},
+            "order": 54,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 14
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 15
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 17,
+            "type": "PreviewAny",
+            "pos": [
+                -968.6157162327899,
+                2868.5409072168304
+            ],
+            "size": [
+                210,
+                257.94791666666663
+            ],
+            "flags": {},
+            "order": 55,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 16
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 19,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1398.615716232791,
+                2598.5409072168304
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        14,
+                        17
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/camelhead.off"
+            ]
+        },
+        {
+            "id": 22,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                140,
+                2600
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        21,
+                        91
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/camelhead.off"
+            ]
+        },
+        {
+            "id": 23,
+            "type": "GeomPackDetectSelfIntersections",
+            "pos": [
+                460,
+                2600
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 29,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 21
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_field",
+                    "name": "mesh_with_field",
+                    "type": "TRIMESH",
+                    "links": [
+                        20
+                    ]
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        22
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackDetectSelfIntersections",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 24,
+            "type": "PreviewAny",
+            "pos": [
+                360,
+                2850
+            ],
+            "size": [
+                231.45000934204353,
+                300.80667163027397
+            ],
+            "flags": {},
+            "order": 57,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 22
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 31,
+            "type": "GeomPackMeshToMeshDistance",
+            "pos": [
+                -770,
+                5540
+            ],
+            "size": [
+                270,
+                126
+            ],
+            "flags": {},
+            "order": 59,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_a",
+                    "name": "mesh_a",
+                    "type": "TRIMESH",
+                    "link": 29
+                },
+                {
+                    "localized_name": "mesh_b",
+                    "name": "mesh_b",
+                    "type": "TRIMESH",
+                    "link": 30
+                },
+                {
+                    "localized_name": "metric",
+                    "name": "metric",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "metric"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sample_count",
+                    "name": "sample_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "sample_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "symmetric",
+                    "name": "symmetric",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "symmetric"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "distance",
+                    "name": "distance",
+                    "type": "FLOAT",
+                    "links": [
+                        33
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "d616ab2f28493cf34f723ed59ea6747b61519c9d",
+                "Node name for S&R": "GeomPackMeshToMeshDistance",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "hausdorff",
+                10000,
+                "true"
+            ]
+        },
+        {
+            "id": 32,
+            "type": "GeomPackRemesh",
+            "pos": [
+                -1120,
+                5280
+            ],
+            "size": [
+                270.06640625,
+                126
+            ],
+            "flags": {},
+            "order": 30,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 31
+                },
+                {
+                    "localized_name": "backend",
+                    "name": "backend",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "backend"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_edge_length",
+                    "name": "target_edge_length",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "target_edge_length"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "iterations",
+                    "name": "iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "protect_boundaries",
+                    "name": "protect_boundaries",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "protect_boundaries"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "voxel_size",
+                    "name": "voxel_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "voxel_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_face_count",
+                    "name": "target_face_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_face_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_vertex_count",
+                    "name": "target_vertex_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_vertex_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "deterministic",
+                    "name": "deterministic",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "deterministic"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "crease_angle",
+                    "name": "crease_angle",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "crease_angle"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "remeshed_mesh",
+                    "name": "remeshed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        35
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0d095605f8096b505a60407e6d471d9a963d92b8",
+                "Node name for S&R": "GeomPackRemesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "pymeshlab_isotropic",
+                1,
+                1
+            ]
+        },
+        {
+            "id": 33,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1490,
+                5340
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        29,
+                        31,
+                        32,
+                        34
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0d095605f8096b505a60407e6d471d9a963d92b8",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/Stanford_Bunny.stl"
+            ]
+        },
+        {
+            "id": 34,
+            "type": "GeomPackRemesh",
+            "pos": [
+                -1130,
+                5530
+            ],
+            "size": [
+                271,
+                150
+            ],
+            "flags": {},
+            "order": 31,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 32
+                },
+                {
+                    "localized_name": "backend",
+                    "name": "backend",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "backend"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_edge_length",
+                    "name": "target_edge_length",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "target_edge_length"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "iterations",
+                    "name": "iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "protect_boundaries",
+                    "name": "protect_boundaries",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "protect_boundaries"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "voxel_size",
+                    "name": "voxel_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "voxel_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_face_count",
+                    "name": "target_face_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_face_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_vertex_count",
+                    "name": "target_vertex_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_vertex_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "deterministic",
+                    "name": "deterministic",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "deterministic"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "crease_angle",
+                    "name": "crease_angle",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "crease_angle"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "remeshed_mesh",
+                    "name": "remeshed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        30
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackRemesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                "cgal_isotropic",
+                "true",
+                1,
+                1
+            ]
+        },
+        {
+            "id": 35,
+            "type": "PreviewAny",
+            "pos": [
+                -420,
+                5580
+            ],
+            "size": [
+                226,
+                88
+            ],
+            "flags": {},
+            "order": 80,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 33
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.70",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 36,
+            "type": "GeomPackMeshToMeshDistance",
+            "pos": [
+                -770,
+                5280
+            ],
+            "size": [
+                270,
+                126
+            ],
+            "flags": {},
+            "order": 58,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_a",
+                    "name": "mesh_a",
+                    "type": "TRIMESH",
+                    "link": 34
+                },
+                {
+                    "localized_name": "mesh_b",
+                    "name": "mesh_b",
+                    "type": "TRIMESH",
+                    "link": 35
+                },
+                {
+                    "localized_name": "metric",
+                    "name": "metric",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "metric"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sample_count",
+                    "name": "sample_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "sample_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "symmetric",
+                    "name": "symmetric",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "symmetric"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "distance",
+                    "name": "distance",
+                    "type": "FLOAT",
+                    "links": [
+                        36
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "d616ab2f28493cf34f723ed59ea6747b61519c9d",
+                "Node name for S&R": "GeomPackMeshToMeshDistance",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "hausdorff",
+                10000,
+                "true"
+            ]
+        },
+        {
+            "id": 37,
+            "type": "PreviewAny",
+            "pos": [
+                -340,
+                5270
+            ],
+            "size": [
+                210,
+                88
+            ],
+            "flags": {},
+            "order": 79,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 36
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.70",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 38,
+            "type": "GeomPackMeshInfo",
+            "pos": [
+                956.7578219248752,
+                1325.8980133806228
+            ],
+            "size": [
+                151.734375,
+                26
+            ],
+            "flags": {},
+            "order": 48,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 37
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": [
+                        38
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "84b2d1816c08ec3cc7d3a4fffa90692669e17507",
+                "Node name for S&R": "GeomPackMeshInfo",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 39,
+            "type": "PreviewAny",
+            "pos": [
+                1126.757821924875,
+                985.898013380623
+            ],
+            "size": [
+                449.15625,
+                271.7890625
+            ],
+            "flags": {},
+            "order": 73,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 38
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 44,
+            "type": "GeomPackMeshToPointCloud",
+            "pos": [
+                430,
+                5270
+            ],
+            "size": [
+                270,
+                106
+            ],
+            "flags": {},
+            "order": 32,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 41
+                },
+                {
+                    "localized_name": "sample_count",
+                    "name": "sample_count",
+                    "type": "INT",
+                    "widget": {
+                        "name": "sample_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sampling_method",
+                    "name": "sampling_method",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "sampling_method"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "include_normals",
+                    "name": "include_normals",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "include_normals"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "point_cloud",
+                    "name": "point_cloud",
+                    "type": "TRIMESH",
+                    "links": [
+                        43
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "d616ab2f28493cf34f723ed59ea6747b61519c9d",
+                "Node name for S&R": "GeomPackMeshToPointCloud",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                10000,
+                "uniform",
+                "true"
+            ]
+        },
+        {
+            "id": 46,
+            "type": "GeomPackPointToMeshDistance",
+            "pos": [
+                790,
+                5400
+            ],
+            "size": [
+                278.064453125,
+                142
+            ],
+            "flags": {},
+            "order": 60,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "target_mesh",
+                    "name": "target_mesh",
+                    "type": "TRIMESH",
+                    "link": 42
+                },
+                {
+                    "localized_name": "pointcloud",
+                    "name": "pointcloud",
+                    "type": "TRIMESH",
+                    "link": 43
+                },
+                {
+                    "localized_name": "distance_type",
+                    "name": "distance_type",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "distance_type"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sign_method",
+                    "name": "sign_method",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "sign_method"
+                    },
+                    "link": null
+                },
+                {
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": null
+                },
+                {
+                    "name": "point_cloud",
+                    "type": "POINT_CLOUD",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "pointcloud",
+                    "name": "pointcloud",
+                    "type": "TRIMESH",
+                    "links": [
+                        47
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                },
+                {
+                    "name": "mean_distance",
+                    "type": "FLOAT",
+                    "links": null
+                },
+                {
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "d616ab2f28493cf34f723ed59ea6747b61519c9d",
+                "Node name for S&R": "GeomPackPointToMeshDistance",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "unsigned",
+                "default"
+            ]
+        },
+        {
+            "id": 47,
+            "type": "GeomPackCombineMeshes",
+            "pos": [
+                420,
+                5620
+            ],
+            "size": [
+                185,
+                86
+            ],
+            "flags": {},
+            "order": 50,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_a",
+                    "name": "mesh_a",
+                    "type": "TRIMESH",
+                    "link": 44
+                },
+                {
+                    "localized_name": "mesh_b",
+                    "name": "mesh_b",
+                    "shape": 7,
+                    "type": "TRIMESH",
+                    "link": 45
+                },
+                {
+                    "localized_name": "mesh_c",
+                    "name": "mesh_c",
+                    "shape": 7,
+                    "type": "TRIMESH",
+                    "link": null
+                },
+                {
+                    "localized_name": "mesh_d",
+                    "name": "mesh_d",
+                    "shape": 7,
+                    "type": "TRIMESH",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "combined_mesh",
+                    "name": "combined_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        46
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "a22feb725fe9afaf6cdcfa75002a514292fcec9a",
+                "Node name for S&R": "GeomPackCombineMeshes",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 48,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                1130,
+                5580
+            ],
+            "size": [
+                768,
+                834
+            ],
+            "flags": {},
+            "order": 81,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 46
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 47
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 43,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                30,
+                5270
+            ],
+            "size": [
+                300,
+                150
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        41,
+                        44
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "cube",
+                2,
+                1
+            ]
+        },
+        {
+            "id": 49,
+            "type": "GeomPackMeshFromSkeleton",
+            "pos": [
+                -694.8197694127102,
+                6699.6395388254205
+            ],
+            "size": [
+                320,
+                150
+            ],
+            "flags": {},
+            "order": 75,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "skeleton",
+                    "name": "skeleton",
+                    "type": "SKELETON",
+                    "link": 48
+                },
+                {
+                    "localized_name": "joint_radius",
+                    "name": "joint_radius",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "joint_radius"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "bone_radius",
+                    "name": "bone_radius",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "bone_radius"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        50
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackMeshFromSkeleton",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                0.02,
+                0.01
+            ]
+        },
+        {
+            "id": 51,
+            "type": "GeomPackExtractSkeleton",
+            "pos": [
+                -1054.8197694127102,
+                6689.6395388254205
+            ],
+            "size": [
+                270,
+                298
+            ],
+            "flags": {},
+            "order": 51,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 49
+                },
+                {
+                    "localized_name": "algorithm",
+                    "name": "algorithm",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "algorithm"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "fix_mesh",
+                    "name": "fix_mesh",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "fix_mesh"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "normalize",
+                    "name": "normalize",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "normalize"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "waves",
+                    "name": "waves",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "waves"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "step_size",
+                    "name": "step_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "step_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sampling_dist",
+                    "name": "sampling_dist",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "sampling_dist"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cluster_pos",
+                    "name": "cluster_pos",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "cluster_pos"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "shape_weight",
+                    "name": "shape_weight",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "shape_weight"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sample_weight",
+                    "name": "sample_weight",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "sample_weight"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "inv_dist",
+                    "name": "inv_dist",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "inv_dist"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "min_length",
+                    "name": "min_length",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "min_length"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "skeleton",
+                    "name": "skeleton",
+                    "type": "SKELETON",
+                    "links": [
+                        48
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "84b2d1816c08ec3cc7d3a4fffa90692669e17507",
+                "Node name for S&R": "GeomPackExtractSkeleton",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "wavefront",
+                true,
+                false,
+                1,
+                1,
+                1,
+                "median",
+                1,
+                0.1,
+                10,
+                0
+            ]
+        },
+        {
+            "id": 52,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                -254.81976941271023,
+                6699.6395388254205
+            ],
+            "size": [
+                768,
+                834
+            ],
+            "flags": {},
+            "order": 85,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 50
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 51
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "84b2d1816c08ec3cc7d3a4fffa90692669e17507",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "overlay",
+                "fields",
+                0.5,
+                0.5,
+                ""
+            ]
+        },
+        {
+            "id": 53,
+            "type": "GeomPackCheckNormals",
+            "pos": [
+                890,
+                6700
+            ],
+            "size": [
+                320,
+                78
+            ],
+            "flags": {},
+            "order": 33,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 52
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        54
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackCheckNormals",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 54,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                570,
+                6850
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        52,
+                        53
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/Stanford_Bunny.stl"
+            ]
+        },
+        {
+            "id": 56,
+            "type": "PreviewAny",
+            "pos": [
+                1310,
+                6660
+            ],
+            "size": [
+                210,
+                161.77256944444446
+            ],
+            "flags": {},
+            "order": 61,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 54
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 59,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                2090,
+                6710
+            ],
+            "size": [
+                270,
+                106
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        58,
+                        96
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "84b2d1816c08ec3cc7d3a4fffa90692669e17507",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "cube",
+                1,
+                2
+            ]
+        },
+        {
+            "id": 65,
+            "type": "MaskPreview",
+            "pos": [
+                -54.18938544996533,
+                8134.595452664961
+            ],
+            "size": [
+                361.92070312499993,
+                319.7300781249999
+            ],
+            "flags": {},
+            "order": 68,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mask",
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 61
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "MaskPreview",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 7,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                1788.829727228757,
+                1009.4530684507497
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/utah_teapot.stl"
+            ]
+        },
+        {
+            "id": 25,
+            "type": "PreviewAny",
+            "pos": [
+                600,
+                2860
+            ],
+            "size": [
+                294.67108950806653,
+                308.1448327209731
+            ],
+            "flags": {},
+            "order": 78,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 23
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 26,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                -1470,
+                3900
+            ],
+            "size": [
+                300,
+                150
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        27,
+                        92
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "cube",
+                2,
+                1
+            ]
+        },
+        {
+            "id": 28,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                -1470,
+                4150
+            ],
+            "size": [
+                300,
+                150
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        28,
+                        93
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "sphere",
+                2.5,
+                2
+            ]
+        },
+        {
+            "id": 11,
+            "type": "PreviewAny",
+            "pos": [
+                310,
+                -440
+            ],
+            "size": [
+                510.8677685950406,
+                255.35537190082619
+            ],
+            "flags": {},
+            "order": 71,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 9
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.70",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 9,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                -380,
+                -570
+            ],
+            "size": [
+                300,
+                150
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "sphere",
+                2,
+                1
+            ]
+        },
+        {
+            "id": 75,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                1887.8460709418023,
+                2616.461787174593
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        78,
+                        81
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/camelhead.off"
+            ]
+        },
+        {
+            "id": 76,
+            "type": "PreviewAny",
+            "pos": [
+                2287.8460709418023,
+                3026.461787174593
+            ],
+            "size": [
+                319.3489583333335,
+                269.95312500000006
+            ],
+            "flags": {},
+            "order": 67,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 76
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 77,
+            "type": "PreviewAny",
+            "pos": [
+                2657.8460709418023,
+                3036.461787174593
+            ],
+            "size": [
+                418.5989583333335,
+                342.6979166666666
+            ],
+            "flags": {},
+            "order": 83,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 77
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 78,
+            "type": "GeomPackRemeshSelfIntersections",
+            "pos": [
+                2267.8460709418023,
+                2616.461787174593
+            ],
+            "size": [
+                281.404296875,
+                150
+            ],
+            "flags": {},
+            "order": 39,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 78
+                },
+                {
+                    "localized_name": "detect_only",
+                    "name": "detect_only",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "detect_only"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "remove_unreferenced",
+                    "name": "remove_unreferenced",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "remove_unreferenced"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "extract_outer_hull",
+                    "name": "extract_outer_hull",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "extract_outer_hull"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "stitch_all",
+                    "name": "stitch_all",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "stitch_all"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "fixed_mesh",
+                    "name": "fixed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        82
+                    ]
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackRemeshSelfIntersections",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                false,
+                true,
+                false,
+                true
+            ]
+        },
+        {
+            "id": 79,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                3097.8460709418023,
+                2696.461787174593
+            ],
+            "size": [
+                768,
+                834
+            ],
+            "flags": {},
+            "order": 82,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 79
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 80
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackPreviewMeshDual",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 80,
+            "type": "GeomPackDetectSelfIntersections",
+            "pos": [
+                2287.8460709418023,
+                2946.461787174593
+            ],
+            "size": [
+                192.9,
+                46
+            ],
+            "flags": {},
+            "order": 40,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 81
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_field",
+                    "name": "mesh_with_field",
+                    "type": "TRIMESH",
+                    "links": [
+                        79
+                    ]
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        76
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackDetectSelfIntersections",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 81,
+            "type": "GeomPackDetectSelfIntersections",
+            "pos": [
+                2657.8460709418023,
+                2936.461787174593
+            ],
+            "size": [
+                192.9,
+                46
+            ],
+            "flags": {},
+            "order": 66,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 82
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_field",
+                    "name": "mesh_with_field",
+                    "type": "TRIMESH",
+                    "links": [
+                        80
+                    ]
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        77
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackDetectSelfIntersections",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 85,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                -770.4601189212021
+            ],
+            "size": [
+                331,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 11,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Loading & Analysis",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 86,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                937.416964676992
+            ],
+            "size": [
+                449,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 12,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Remeshing & Refinement",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 88,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                3811.290272193721
+            ],
+            "size": [
+                346,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 13,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Boolean Operations",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 89,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                5234.8226821891085
+            ],
+            "size": [
+                344,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 14,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Distance & Analysis",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 92,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                8855.848492305771
+            ],
+            "size": [
+                217,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 15,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "UV Mapping",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 87,
+            "type": "Label (rgthree)",
+            "pos": [
+                -1924.5213257082678,
+                2535.8046497007504
+            ],
+            "size": [
+                222,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 16,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Mesh Repair",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 90,
+            "type": "Label (rgthree)",
+            "pos": [
+                -2005.241097705958,
+                6685.696652492531
+            ],
+            "size": [
+                340,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 17,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Advanced Features",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 91,
+            "type": "Label (rgthree)",
+            "pos": [
+                -2068.223824495639,
+                7859.218145498837
+            ],
+            "size": [
+                372,
+                40
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 18,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Texture & Conversion",
+            "properties": {
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 63,
+            "type": "LoadImage",
+            "pos": [
+                -566.5119425144637,
+                7908.93213073854
+            ],
+            "size": [
+                315,
+                314
+            ],
+            "flags": {},
+            "order": 19,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "image",
+                    "name": "image",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "image"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "choose file to upload",
+                    "name": "upload",
+                    "type": "IMAGEUPLOAD",
+                    "widget": {
+                        "name": "upload"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "IMAGE",
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        63
+                    ]
+                },
+                {
+                    "localized_name": "MASK",
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "LoadImage",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "example.png",
+                "image"
+            ]
+        },
+        {
+            "id": 67,
+            "type": "ImageToMask",
+            "pos": [
+                -197.27002471608984,
+                7904.026891013743
+            ],
+            "size": [
+                270,
+                58
+            ],
+            "flags": {},
+            "order": 41,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "image",
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 63
+                },
+                {
+                    "localized_name": "channel",
+                    "name": "channel",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "channel"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "MASK",
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": [
+                        61,
+                        62
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.71",
+                "Node name for S&R": "ImageToMask",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "red"
+            ]
+        },
+        {
+            "id": 95,
+            "type": "GeomPackPreviewMeshVTK",
+            "pos": [
+                -925.5853045646534,
+                -118.01273959340729
+            ],
+            "size": [
+                512,
+                702
+            ],
+            "flags": {},
+            "order": 46,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 88
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTK",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                "fields",
+                ""
+            ]
+        },
+        {
+            "id": 71,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -350,
+                -730
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 20,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        85,
+                        86
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/spot_the_cow.obj"
+            ]
+        },
+        {
+            "id": 15,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1420,
+                980
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 21,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        11,
+                        71
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "253a956368261760da54dc96750c2ab0224e2b1f",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/utah_teapot.stl"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1410,
+                -580
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 22,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        1,
+                        88
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": [
+                        3
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/camel_b.obj"
+            ]
+        },
+        {
+            "id": 12,
+            "type": "PreviewAny",
+            "pos": [
+                340,
+                -740
+            ],
+            "size": [
+                476.7768595041316,
+                235.7272727272725
+            ],
+            "flags": {},
+            "order": 70,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "source",
+                    "name": "source",
+                    "type": "*",
+                    "link": 10
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.70",
+                "Node name for S&R": "PreviewAny",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 72,
+            "type": "GeomPackRemesh",
+            "pos": [
+                -1080,
+                1090
+            ],
+            "size": [
+                271,
+                126
+            ],
+            "flags": {},
+            "order": 44,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 71
+                },
+                {
+                    "localized_name": "backend",
+                    "name": "backend",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "backend"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_edge_length",
+                    "name": "target_edge_length",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "target_edge_length"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "iterations",
+                    "name": "iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "protect_boundaries",
+                    "name": "protect_boundaries",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "protect_boundaries"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "voxel_size",
+                    "name": "voxel_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "voxel_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_face_count",
+                    "name": "target_face_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_face_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_vertex_count",
+                    "name": "target_vertex_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_vertex_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "deterministic",
+                    "name": "deterministic",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "deterministic"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "crease_angle",
+                    "name": "crease_angle",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "crease_angle"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "remeshed_mesh",
+                    "name": "remeshed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        72
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackRemesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                "pymeshlab_isotropic",
+                2,
+                0.3
+            ]
+        },
+        {
+            "id": 40,
+            "type": "GeomPackLoadMeshBatch",
+            "pos": [
+                166.75782192487503,
+                1385.8980133806228
+            ],
+            "size": [
+                320,
+                150
+            ],
+            "flags": {},
+            "order": 23,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "folder_path",
+                    "name": "folder_path",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "folder_path"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "start_index",
+                    "name": "start_index",
+                    "type": "INT",
+                    "widget": {
+                        "name": "start_index"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "max_meshes",
+                    "name": "max_meshes",
+                    "type": "INT",
+                    "widget": {
+                        "name": "max_meshes"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "meshes",
+                    "name": "meshes",
+                    "shape": 6,
+                    "type": "TRIMESH",
+                    "slot_index": 0,
+                    "links": [
+                        37,
+                        73
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMeshBatch",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d",
+                0,
+                2
+            ]
+        },
+        {
+            "id": 73,
+            "type": "GeomPackRemesh",
+            "pos": [
+                616.7578219248752,
+                1475.8980133806228
+            ],
+            "size": [
+                271,
+                126
+            ],
+            "flags": {},
+            "order": 49,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 73
+                },
+                {
+                    "localized_name": "backend",
+                    "name": "backend",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "backend"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_edge_length",
+                    "name": "target_edge_length",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "target_edge_length"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "iterations",
+                    "name": "iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "protect_boundaries",
+                    "name": "protect_boundaries",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "protect_boundaries"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "voxel_size",
+                    "name": "voxel_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "voxel_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_face_count",
+                    "name": "target_face_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_face_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_vertex_count",
+                    "name": "target_vertex_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_vertex_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "deterministic",
+                    "name": "deterministic",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "deterministic"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "crease_angle",
+                    "name": "crease_angle",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "crease_angle"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "remeshed_mesh",
+                    "name": "remeshed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        89
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackRemesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.4.1"
+                }
+            },
+            "widgets_values": [
+                "pymeshlab_isotropic",
+                1,
+                3
+            ]
+        },
+        {
+            "id": 96,
+            "type": "GeomPackPreviewMeshVTKBatch",
+            "pos": [
+                987.1236321216178,
+                1444.5145473594146
+            ],
+            "size": [
+                512,
+                758
+            ],
+            "flags": {},
+            "order": 74,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 89
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "index",
+                    "name": "index",
+                    "type": "INT",
+                    "widget": {
+                        "name": "index"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTKBatch"
+            },
+            "widgets_values": [
+                "fields",
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 5,
+            "type": "GeomPackRefineMesh",
+            "pos": [
+                2078.829727228755,
+                1189.4530684507495
+            ],
+            "size": [
+                270,
+                102
+            ],
+            "flags": {},
+            "order": 36,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 4
+                },
+                {
+                    "localized_name": "operation",
+                    "name": "operation",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "operation"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "target_face_count",
+                    "name": "target_face_count",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "target_face_count"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "decimation_method",
+                    "name": "decimation_method",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "decimation_method"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivision_iterations",
+                    "name": "subdivision_iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivision_iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "smoothing_iterations",
+                    "name": "smoothing_iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "smoothing_iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "lambda_factor",
+                    "name": "lambda_factor",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "lambda_factor"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "refined_mesh",
+                    "name": "refined_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        6
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackRefineMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "subdivision_loop",
+                1
+            ]
+        },
+        {
+            "id": 18,
+            "type": "GeomPackFillHoles",
+            "pos": [
+                -1088.615716232791,
+                2678.5409072168304
+            ],
+            "size": [
+                270,
+                102
+            ],
+            "flags": {},
+            "order": 28,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 17
+                },
+                {
+                    "localized_name": "method",
+                    "name": "method",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "method"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "maxholesize",
+                    "name": "maxholesize",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "maxholesize"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "filled_mesh",
+                    "name": "filled_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        15
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": [
+                        16
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "991c7a75886f50d567e5ed6d36aed06d0729a938",
+                "Node name for S&R": "GeomPackFillHoles",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "igl_fan",
+                100
+            ]
+        },
+        {
+            "id": 21,
+            "type": "GeomPackFixSelfIntersectionsByRemoval",
+            "pos": [
+                780,
+                2590
+            ],
+            "size": [
+                320,
+                150
+            ],
+            "flags": {},
+            "order": 56,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 20
+                },
+                {
+                    "localized_name": "fill_holes",
+                    "name": "fill_holes",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "fill_holes"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "fix_normals",
+                    "name": "fix_normals",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "fix_normals"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "max_hole_size",
+                    "name": "max_hole_size",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "max_hole_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "re_detect_after_fix",
+                    "name": "re_detect_after_fix",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "re_detect_after_fix"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "fixed_mesh",
+                    "name": "fixed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        90
+                    ]
+                },
+                {
+                    "localized_name": "report",
+                    "name": "report",
+                    "type": "STRING",
+                    "links": [
+                        23
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackFixSelfIntersectionsByRemoval",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                true,
+                true,
+                100,
+                true
+            ]
+        },
+        {
+            "id": 97,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                1029.4271499088613,
+                2795.3468326567126
+            ],
+            "size": [
+                768,
+                826
+            ],
+            "flags": {},
+            "order": 77,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 91
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 90
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshDual"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 98,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                -1120.8159274509233,
+                4243.484296837206
+            ],
+            "size": [
+                768,
+                826
+            ],
+            "flags": {},
+            "order": 38,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 92
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 93
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshDual"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 99,
+            "type": "GeomPackPreviewMeshVTK",
+            "pos": [
+                -306.347122657483,
+                3862.6617787588325
+            ],
+            "size": [
+                512,
+                694
+            ],
+            "flags": {},
+            "order": 65,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 94
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTK"
+            },
+            "widgets_values": [
+                "fields",
+                ""
+            ]
+        },
+        {
+            "id": 30,
+            "type": "GeomPackBooleanOp",
+            "pos": [
+                -1070,
+                3880
+            ],
+            "size": [
+                320,
+                130
+            ],
+            "flags": {},
+            "order": 37,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_a",
+                    "name": "mesh_a",
+                    "type": "TRIMESH",
+                    "link": 27
+                },
+                {
+                    "localized_name": "mesh_b",
+                    "name": "mesh_b",
+                    "type": "TRIMESH",
+                    "link": 28
+                },
+                {
+                    "localized_name": "operation",
+                    "name": "operation",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "operation"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "engine",
+                    "name": "engine",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "engine"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "result_mesh",
+                    "name": "result_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        94
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackBooleanOp",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "union",
+                "libigl_cgal"
+            ]
+        },
+        {
+            "id": 45,
+            "type": "GeomPackCreatePrimitive",
+            "pos": [
+                30,
+                5520
+            ],
+            "size": [
+                300,
+                150
+            ],
+            "flags": {},
+            "order": 24,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "shape",
+                    "name": "shape",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "shape"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "size",
+                    "name": "size",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "subdivisions",
+                    "name": "subdivisions",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "subdivisions"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        42,
+                        45
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "8b8322e2f784d84097cd3427f097b55dc9a29d2a",
+                "Node name for S&R": "GeomPackCreatePrimitive",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "sphere",
+                2.5,
+                2
+            ]
+        },
+        {
+            "id": 50,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1494.8197694127102,
+                6699.6395388254205
+            ],
+            "size": [
+                320,
+                150
+            ],
+            "flags": {},
+            "order": 25,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        49,
+                        51
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/truck.obj"
+            ]
+        },
+        {
+            "id": 55,
+            "type": "GeomPackComputeNormals",
+            "pos": [
+                980,
+                6910
+            ],
+            "size": [
+                320,
+                78
+            ],
+            "flags": {},
+            "order": 34,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 53
+                },
+                {
+                    "localized_name": "smooth_vertex_normals",
+                    "name": "smooth_vertex_normals",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "smooth_vertex_normals"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_normals",
+                    "name": "mesh_with_normals",
+                    "type": "TRIMESH",
+                    "links": [
+                        95
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackComputeNormals",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "true"
+            ]
+        },
+        {
+            "id": 100,
+            "type": "GeomPackPreviewMeshVTK",
+            "pos": [
+                1361.756387391802,
+                6901.87147133123
+            ],
+            "size": [
+                512,
+                694
+            ],
+            "flags": {},
+            "order": 62,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 95
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTK"
+            },
+            "widgets_values": [
+                "fields",
+                ""
+            ]
+        },
+        {
+            "id": 101,
+            "type": "GeomPackPreviewMeshDual",
+            "pos": [
+                2797.1151392820516,
+                6661.49266330375
+            ],
+            "size": [
+                768,
+                826
+            ],
+            "flags": {},
+            "order": 63,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_1",
+                    "name": "mesh_1",
+                    "type": "TRIMESH",
+                    "link": 96
+                },
+                {
+                    "localized_name": "mesh_2",
+                    "name": "mesh_2",
+                    "type": "TRIMESH",
+                    "link": 97
+                },
+                {
+                    "localized_name": "layout",
+                    "name": "layout",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "layout"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_1",
+                    "name": "opacity_1",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_1"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "opacity_2",
+                    "name": "opacity_2",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "opacity_2"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshDual"
+            },
+            "widgets_values": [
+                "side_by_side",
+                "fields",
+                1,
+                1,
+                ""
+            ]
+        },
+        {
+            "id": 60,
+            "type": "GeomPackTransformMesh",
+            "pos": [
+                2400,
+                6820
+            ],
+            "size": [
+                320,
+                150
+            ],
+            "flags": {},
+            "order": 35,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 58
+                },
+                {
+                    "localized_name": "operation",
+                    "name": "operation",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "operation"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "translate_x",
+                    "name": "translate_x",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "translate_x"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "translate_y",
+                    "name": "translate_y",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "translate_y"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "translate_z",
+                    "name": "translate_z",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "translate_z"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "rotate_x",
+                    "name": "rotate_x",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "rotate_x"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "rotate_y",
+                    "name": "rotate_y",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "rotate_y"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "rotate_z",
+                    "name": "rotate_z",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "rotate_z"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scale_uniform",
+                    "name": "scale_uniform",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "scale_uniform"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scale_x",
+                    "name": "scale_x",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "scale_x"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scale_y",
+                    "name": "scale_y",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "scale_y"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scale_z",
+                    "name": "scale_z",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "scale_z"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "mirror_axis",
+                    "name": "mirror_axis",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mirror_axis"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "center_x",
+                    "name": "center_x",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "center_x"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "center_y",
+                    "name": "center_y",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "center_y"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "center_z",
+                    "name": "center_z",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "center_z"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "matrix_string",
+                    "name": "matrix_string",
+                    "shape": 7,
+                    "type": "STRING",
+                    "widget": {
+                        "name": "matrix_string"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "transformed_mesh",
+                    "name": "transformed_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        97
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackTransformMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "translate",
+                4,
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "id": 102,
+            "type": "GeomPackPreviewMeshVTK",
+            "pos": [
+                -1212.3723439060568,
+                7878.014641096149
+            ],
+            "size": [
+                512,
+                694
+            ],
+            "flags": {},
+            "order": 52,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 98
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTK"
+            },
+            "widgets_values": [
+                "texture",
+                ""
+            ]
+        },
+        {
+            "id": 61,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1550,
+                7890
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 26,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        98
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/mount_textured.glb"
+            ]
+        },
+        {
+            "id": 66,
+            "type": "GeomPackTextureToGeometry",
+            "pos": [
+                109.27029491697242,
+                7894.026891013743
+            ],
+            "size": [
+                320,
+                170
+            ],
+            "flags": {},
+            "order": 69,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mask",
+                    "name": "mask",
+                    "type": "MASK",
+                    "link": 62
+                },
+                {
+                    "localized_name": "height_scale",
+                    "name": "height_scale",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "height_scale"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "base_resolution",
+                    "name": "base_resolution",
+                    "type": "INT",
+                    "widget": {
+                        "name": "base_resolution"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "invert_height",
+                    "name": "invert_height",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "invert_height"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "smooth_normals",
+                    "name": "smooth_normals",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "smooth_normals"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        99
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "0.1.1",
+                "Node name for S&R": "GeomPackTextureToGeometry",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                1,
+                512,
+                "false",
+                "true"
+            ]
+        },
+        {
+            "id": 103,
+            "type": "GeomPackPreviewMeshVTK",
+            "pos": [
+                483.3891495974127,
+                7905.223372449461
+            ],
+            "size": [
+                512,
+                694
+            ],
+            "flags": {},
+            "order": 84,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 99
+                },
+                {
+                    "localized_name": "mode",
+                    "name": "mode",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "mode"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshVTK"
+            },
+            "widgets_values": [
+                "fields",
+                ""
+            ]
+        },
+        {
+            "id": 83,
+            "type": "GeomPackUVUnwrap",
+            "pos": [
+                -1307.1741544724837,
+                8903.658370654432
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 53,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 83
+                },
+                {
+                    "localized_name": "method",
+                    "name": "method",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "method"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "iterations",
+                    "name": "iterations",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "iterations"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "angle_limit",
+                    "name": "angle_limit",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "angle_limit"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "island_margin",
+                    "name": "island_margin",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "island_margin"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scale_to_bounds",
+                    "name": "scale_to_bounds",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "scale_to_bounds"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cube_size",
+                    "name": "cube_size",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cube_size"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cylinder_radius",
+                    "name": "cylinder_radius",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cylinder_radius"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "unwrapped_mesh",
+                    "name": "unwrapped_mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        100
+                    ]
+                },
+                {
+                    "localized_name": "info",
+                    "name": "info",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "01a1fb3f161fe989dc1486b6064a395302d93af3",
+                "Node name for S&R": "GeomPackUVUnwrap",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "xatlas"
+            ]
+        },
+        {
+            "id": 104,
+            "type": "GeomPackPreviewMeshUV",
+            "pos": [
+                -1004.5181381572761,
+                8894.393288861758
+            ],
+            "size": [
+                600,
+                378
+            ],
+            "flags": {},
+            "order": 76,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 100
+                },
+                {
+                    "localized_name": "show_checker",
+                    "name": "show_checker",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "show_checker"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "show_wireframe",
+                    "name": "show_wireframe",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "show_wireframe"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "08586daaf224867ed4759d4212b00b2c7452cef4",
+                "Node name for S&R": "GeomPackPreviewMeshUV"
+            },
+            "widgets_values": [
+                false,
+                true,
+                ""
+            ]
+        },
+        {
+            "id": 82,
+            "type": "GeomPackLoadMesh",
+            "pos": [
+                -1612.3898174786186,
+                8894.800702638806
+            ],
+            "size": [
+                270,
+                78
+            ],
+            "flags": {},
+            "order": 27,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        83
+                    ]
+                },
+                {
+                    "localized_name": "texture",
+                    "name": "texture",
+                    "type": "IMAGE",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-GeometryPack",
+                "ver": "6d317434425ba8f2c60d04a4b19d3fb67ef4b099",
+                "Node name for S&R": "GeomPackLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.4.1",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-geometrypack"
+            },
+            "widgets_values": [
+                "3d/truck.obj"
+            ]
+        }
+    ],
+    "links": [
+        [
+            1,
+            2,
+            0,
+            1,
+            0,
+            "TRIMESH"
+        ],
+        [
+            3,
+            2,
+            1,
+            4,
+            0,
+            "IMAGE"
+        ],
+        [
+            4,
+            7,
+            0,
+            5,
+            0,
+            "TRIMESH"
+        ],
+        [
+            5,
+            7,
+            0,
+            6,
+            0,
+            "TRIMESH"
+        ],
+        [
+            6,
+            5,
+            0,
+            6,
+            1,
+            "TRIMESH"
+        ],
+        [
+            9,
+            10,
+            2,
+            11,
+            0,
+            "*"
+        ],
+        [
+            10,
+            8,
+            0,
+            12,
+            0,
+            "*"
+        ],
+        [
+            11,
+            15,
+            0,
+            13,
+            0,
+            "TRIMESH"
+        ],
+        [
+            14,
+            19,
+            0,
+            16,
+            0,
+            "TRIMESH"
+        ],
+        [
+            15,
+            18,
+            0,
+            16,
+            1,
+            "TRIMESH"
+        ],
+        [
+            16,
+            18,
+            1,
+            17,
+            0,
+            "*"
+        ],
+        [
+            17,
+            19,
+            0,
+            18,
+            0,
+            "TRIMESH"
+        ],
+        [
+            20,
+            23,
+            0,
+            21,
+            0,
+            "TRIMESH"
+        ],
+        [
+            21,
+            22,
+            0,
+            23,
+            0,
+            "TRIMESH"
+        ],
+        [
+            22,
+            23,
+            1,
+            24,
+            0,
+            "*"
+        ],
+        [
+            23,
+            21,
+            1,
+            25,
+            0,
+            "*"
+        ],
+        [
+            27,
+            26,
+            0,
+            30,
+            0,
+            "TRIMESH"
+        ],
+        [
+            28,
+            28,
+            0,
+            30,
+            1,
+            "TRIMESH"
+        ],
+        [
+            29,
+            33,
+            0,
+            31,
+            0,
+            "TRIMESH"
+        ],
+        [
+            30,
+            34,
+            0,
+            31,
+            1,
+            "TRIMESH"
+        ],
+        [
+            31,
+            33,
+            0,
+            32,
+            0,
+            "TRIMESH"
+        ],
+        [
+            32,
+            33,
+            0,
+            34,
+            0,
+            "TRIMESH"
+        ],
+        [
+            33,
+            31,
+            0,
+            35,
+            0,
+            "*"
+        ],
+        [
+            34,
+            33,
+            0,
+            36,
+            0,
+            "TRIMESH"
+        ],
+        [
+            35,
+            32,
+            0,
+            36,
+            1,
+            "TRIMESH"
+        ],
+        [
+            36,
+            36,
+            0,
+            37,
+            0,
+            "*"
+        ],
+        [
+            37,
+            40,
+            0,
+            38,
+            0,
+            "TRIMESH"
+        ],
+        [
+            38,
+            38,
+            0,
+            39,
+            0,
+            "*"
+        ],
+        [
+            41,
+            43,
+            0,
+            44,
+            0,
+            "TRIMESH"
+        ],
+        [
+            42,
+            45,
+            0,
+            46,
+            0,
+            "TRIMESH"
+        ],
+        [
+            43,
+            44,
+            0,
+            46,
+            1,
+            "TRIMESH"
+        ],
+        [
+            44,
+            43,
+            0,
+            47,
+            0,
+            "TRIMESH"
+        ],
+        [
+            45,
+            45,
+            0,
+            47,
+            1,
+            "TRIMESH"
+        ],
+        [
+            46,
+            47,
+            0,
+            48,
+            0,
+            "TRIMESH"
+        ],
+        [
+            47,
+            46,
+            0,
+            48,
+            1,
+            "TRIMESH"
+        ],
+        [
+            48,
+            51,
+            0,
+            49,
+            0,
+            "SKELETON"
+        ],
+        [
+            49,
+            50,
+            0,
+            51,
+            0,
+            "TRIMESH"
+        ],
+        [
+            50,
+            49,
+            0,
+            52,
+            0,
+            "TRIMESH"
+        ],
+        [
+            51,
+            50,
+            0,
+            52,
+            1,
+            "TRIMESH"
+        ],
+        [
+            52,
+            54,
+            0,
+            53,
+            0,
+            "TRIMESH"
+        ],
+        [
+            53,
+            54,
+            0,
+            55,
+            0,
+            "TRIMESH"
+        ],
+        [
+            54,
+            53,
+            0,
+            56,
+            0,
+            "*"
+        ],
+        [
+            58,
+            59,
+            0,
+            60,
+            0,
+            "TRIMESH"
+        ],
+        [
+            61,
+            67,
+            0,
+            65,
+            0,
+            "MASK"
+        ],
+        [
+            62,
+            67,
+            0,
+            66,
+            0,
+            "MASK"
+        ],
+        [
+            63,
+            63,
+            0,
+            67,
+            0,
+            "IMAGE"
+        ],
+        [
+            71,
+            15,
+            0,
+            72,
+            0,
+            "TRIMESH"
+        ],
+        [
+            72,
+            72,
+            0,
+            13,
+            1,
+            "TRIMESH"
+        ],
+        [
+            73,
+            40,
+            0,
+            73,
+            0,
+            "TRIMESH"
+        ],
+        [
+            76,
+            80,
+            1,
+            76,
+            0,
+            "*"
+        ],
+        [
+            77,
+            81,
+            1,
+            77,
+            0,
+            "*"
+        ],
+        [
+            78,
+            75,
+            0,
+            78,
+            0,
+            "TRIMESH"
+        ],
+        [
+            79,
+            80,
+            0,
+            79,
+            0,
+            "TRIMESH"
+        ],
+        [
+            80,
+            81,
+            0,
+            79,
+            1,
+            "TRIMESH"
+        ],
+        [
+            81,
+            75,
+            0,
+            80,
+            0,
+            "TRIMESH"
+        ],
+        [
+            82,
+            78,
+            0,
+            81,
+            0,
+            "TRIMESH"
+        ],
+        [
+            83,
+            82,
+            0,
+            83,
+            0,
+            "TRIMESH"
+        ],
+        [
+            85,
+            71,
+            0,
+            8,
+            0,
+            "TRIMESH"
+        ],
+        [
+            86,
+            71,
+            0,
+            10,
+            0,
+            "TRIMESH"
+        ],
+        [
+            88,
+            2,
+            0,
+            95,
+            0,
+            "TRIMESH"
+        ],
+        [
+            89,
+            73,
+            0,
+            96,
+            0,
+            "TRIMESH"
+        ],
+        [
+            90,
+            21,
+            0,
+            97,
+            1,
+            "TRIMESH"
+        ],
+        [
+            91,
+            22,
+            0,
+            97,
+            0,
+            "TRIMESH"
+        ],
+        [
+            92,
+            26,
+            0,
+            98,
+            0,
+            "TRIMESH"
+        ],
+        [
+            93,
+            28,
+            0,
+            98,
+            1,
+            "TRIMESH"
+        ],
+        [
+            94,
+            30,
+            0,
+            99,
+            0,
+            "TRIMESH"
+        ],
+        [
+            95,
+            55,
+            0,
+            100,
+            0,
+            "TRIMESH"
+        ],
+        [
+            96,
+            59,
+            0,
+            101,
+            0,
+            "TRIMESH"
+        ],
+        [
+            97,
+            60,
+            0,
+            101,
+            1,
+            "TRIMESH"
+        ],
+        [
+            98,
+            61,
+            0,
+            102,
+            0,
+            "TRIMESH"
+        ],
+        [
+            99,
+            66,
+            0,
+            103,
+            0,
+            "TRIMESH"
+        ],
+        [
+            100,
+            83,
+            0,
+            104,
+            0,
+            "TRIMESH"
+        ]
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "title": "1. Mesh 미리보기",
+            "bounding": [
+                -1420,
+                -820,
+                1009.2265589488649,
+                1404.2980563918454
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 2,
+            "title": "4. Mesh 분할",
+            "bounding": [
+                1778.829727228757,
+                919.4530684507497,
+                1558.0397754820935,
+                950.234
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 3,
+            "title": "2. Mesh 정보",
+            "bounding": [
+                -390,
+                -810,
+                1213.9974496384275,
+                636.0793388429746
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 4,
+            "title": "3. Remesh - 길이에 따른",
+            "bounding": [
+                -1430,
+                900,
+                1536.522613250299,
+                917.6
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 5,
+            "title": "5. Fill Hole",
+            "bounding": [
+                -1428.615716232791,
+                2508.5409072168304,
+                1491.7604166666665,
+                919.0947916666667
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 6,
+            "title": "6. Self-Intersection Removal / 교차면 제거",
+            "bounding": [
+                130,
+                2520,
+                1702.489583333333,
+                1150.13125
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 7,
+            "title": "8. Mesh 연산",
+            "bounding": [
+                -1480,
+                3780,
+                1725.3480855049079,
+                1257.6170898437495
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 8,
+            "title": "9. Hausdorff & Chamfer Distance(도르프 & 챔퍼거리)",
+            "bounding": [
+                -1500,
+                5200,
+                1375.629616477271,
+                495.8107951927534
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 9,
+            "title": "3-1, Batch Remeshing / 폴더 리메쉬 / 시작번호, 최대갯수",
+            "bounding": [
+                156.75782192487503,
+                915.898013380623,
+                1556.8052634512496,
+                1305.8905628906248
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 10,
+            "title": "10. Signed Distance Function / 부호 거리 함수",
+            "bounding": [
+                20,
+                5190,
+                1884.8109821626733,
+                1219.226595743545
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 11,
+            "title": "11. Skeleton Extraction / 뼈대 추출",
+            "bounding": [
+                -1524.8197694127102,
+                6599.6395388254205,
+                2021.74828125,
+                924.888359375
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 12,
+            "title": "12. Normal Fields Visualization (노멀 필드 시각화)",
+            "bounding": [
+                560,
+                6590,
+                1368.408617424242,
+                1036.5485479797978
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 13,
+            "title": "13. Transform Operations (속성 변경)",
+            "bounding": [
+                1980,
+                6590,
+                1685.589745814616,
+                917.6
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 14,
+            "title": "14. Preview with Texture / mode가 texture 선택",
+            "bounding": [
+                -1560,
+                7810,
+                892.6257325025834,
+                785.188457515496
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 15,
+            "title": "15. Depth Map to Mesh ( Mesh의 깊이맵)",
+            "bounding": [
+                -604.1893854499655,
+                7814.595452664961,
+                1635.6223051955271,
+                794.4234375000005
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 16,
+            "title": "7. Self-Intersection Remesh (교차면 리메쉬)",
+            "bounding": [
+                1877.8460709418023,
+                2536.461787174593,
+                1996.364583333333,
+                1001.5739583333334
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 17,
+            "title": "16. UV Mapping",
+            "bounding": [
+                -1622.3898174786186,
+                8821.200702638807,
+                1233.0163664865422,
+                474.2623342773745
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        }
+    ],
+    "config": {},
+    "extra": {
+        "ue_links": [],
+        "ds": {
+            "scale": 1.586309297171513,
+            "offset": [
+                1819.6176917597786,
+                -8613.867920452542
+            ]
+        },
+        "workflowRendererVersion": "LG",
+        "links_added_by_ue": []
+    },
+    "version": 0.4
+}
