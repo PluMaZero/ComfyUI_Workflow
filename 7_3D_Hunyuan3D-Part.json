@@ -1,0 +1,2117 @@
+{
+    "id": "c4b21ed4-5cd5-49b3-a72b-42a036fbc2e6",
+    "revision": 0,
+    "last_node_id": 57,
+    "last_link_id": 82,
+    "nodes": [
+        {
+            "id": 26,
+            "type": "P3SAMSegmentMesh",
+            "pos": [
+                487.2770772172766,
+                -39.61290834321549
+            ],
+            "size": [
+                300.46875,
+                190
+            ],
+            "flags": {},
+            "order": 17,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "link": 52
+                },
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "link": 44
+                },
+                {
+                    "localized_name": "prompt_num",
+                    "name": "prompt_num",
+                    "type": "INT",
+                    "widget": {
+                        "name": "prompt_num"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "prompt_bs",
+                    "name": "prompt_bs",
+                    "type": "INT",
+                    "widget": {
+                        "name": "prompt_bs"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "threshold",
+                    "name": "threshold",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "threshold"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "post_process",
+                    "name": "post_process",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "post_process"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        47,
+                        63
+                    ]
+                },
+                {
+                    "localized_name": "bounding_boxes",
+                    "name": "bounding_boxes",
+                    "type": "BBOXES_3D",
+                    "links": [
+                        48
+                    ]
+                },
+                {
+                    "localized_name": "face_ids",
+                    "name": "face_ids",
+                    "type": "FACE_IDS",
+                    "links": []
+                },
+                {
+                    "localized_name": "preview_path",
+                    "name": "preview_path",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "P3SAMSegmentMesh",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                400,
+                4,
+                0.95,
+                true
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 43,
+            "type": "Preview3D",
+            "pos": [
+                1500.7642128284238,
+                2134.022713276771
+            ],
+            "size": [
+                400,
+                550
+            ],
+            "flags": {},
+            "order": 27,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "camera_info",
+                    "name": "camera_info",
+                    "shape": 7,
+                    "type": "LOAD3D_CAMERA",
+                    "link": null
+                },
+                {
+                    "localized_name": "bg_image",
+                    "name": "bg_image",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "localized_name": "model_file",
+                    "name": "model_file",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "model_file"
+                    },
+                    "link": 74
+                },
+                {
+                    "localized_name": "image",
+                    "name": "image",
+                    "type": "PREVIEW_3D",
+                    "widget": {
+                        "name": "image"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.3.68",
+                "Node name for S&R": "Preview3D",
+                "ue_properties": {
+                    "widget_ue_connectable": {
+                        "model_file": true
+                    },
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "Last Time Model File": "F:/ComfyUI/ComfyUI/output/xpart_parts_1.glb",
+                "Resource Folder": "ComfyUI/ComfyUI/output",
+                "Camera Info": {
+                    "position": {
+                        "x": 3.200077029538459,
+                        "y": 6.944949402126227,
+                        "z": 1.9581498553198067
+                    },
+                    "target": {
+                        "x": 0,
+                        "y": 1.5599504507824888,
+                        "z": 0
+                    },
+                    "zoom": 1,
+                    "cameraType": "perspective"
+                },
+                "Scene Config": {
+                    "showGrid": true,
+                    "backgroundColor": "#282828",
+                    "backgroundImage": "",
+                    "backgroundRenderMode": "tiled"
+                },
+                "Camera Config": {
+                    "cameraType": "perspective",
+                    "fov": 35,
+                    "state": {
+                        "position": {
+                            "x": 6.118514189920002,
+                            "y": 3.9844160668431465,
+                            "z": 12.670852760304847
+                        },
+                        "target": {
+                            "x": 0,
+                            "y": 0.9093722073445816,
+                            "z": 0
+                        },
+                        "zoom": 1,
+                        "cameraType": "perspective"
+                    }
+                },
+                "Light Config": {
+                    "intensity": 3
+                }
+            },
+            "widgets_values": [
+                "F:/ComfyUI/ComfyUI/output/xpart_parts_1.glb",
+                ""
+            ]
+        },
+        {
+            "id": 28,
+            "type": "ComputeMeshFeatures",
+            "pos": [
+                136.91380393615418,
+                -39.61290834321549
+            ],
+            "size": [
+                287.765625,
+                150
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 50
+                },
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "link": 51
+                },
+                {
+                    "localized_name": "all_points",
+                    "name": "all_points",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "all_points"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "point_num",
+                    "name": "point_num",
+                    "type": "INT",
+                    "widget": {
+                        "name": "point_num"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "links": [
+                        52
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "ComputeMeshFeatures",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                false,
+                100000,
+                1,
+                "fixed"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 20,
+            "type": "Hunyuan3DPreviewBoundingBoxes",
+            "pos": [
+                896.7437602074974,
+                247.65455515437958
+            ],
+            "size": [
+                512,
+                722
+            ],
+            "flags": {},
+            "order": 20,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 47
+                },
+                {
+                    "localized_name": "bboxes",
+                    "name": "bboxes",
+                    "type": "BBOXES_3D",
+                    "link": 48
+                },
+                {
+                    "localized_name": "line_width",
+                    "name": "line_width",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "line_width"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "0f07788d9eef3387c24edde1698d06e4c5d3c0d3",
+                "Node name for S&R": "Hunyuan3DPreviewBoundingBoxes",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                2,
+                ""
+            ]
+        },
+        {
+            "id": 31,
+            "type": "Hy3DExportMesh",
+            "pos": [
+                877.9180805442306,
+                -39.61290834321549
+            ],
+            "size": [
+                270,
+                106
+            ],
+            "flags": {},
+            "order": 19,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 63
+                },
+                {
+                    "localized_name": "filename_prefix",
+                    "name": "filename_prefix",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "file_format",
+                    "name": "file_format",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_format"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "save_file",
+                    "name": "save_file",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "save_file"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "glb_path",
+                    "name": "glb_path",
+                    "type": "STRING",
+                    "links": [
+                        64
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui-hunyan3dwrapper",
+                "ver": "cbe2837e506ffb5942fda754d0f0bccf586363a8",
+                "Node name for S&R": "Hy3DExportMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "3D/Hy3D",
+                "glb",
+                true
+            ]
+        },
+        {
+            "id": 33,
+            "type": "ShowText|pysssss",
+            "pos": [
+                1245.2925400324025,
+                -39.61290834321549
+            ],
+            "size": [
+                283.1539804291533,
+                167.20292789301686
+            ],
+            "flags": {},
+            "order": 23,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "link": 64
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "shape": 6,
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui-custom-scripts",
+                "ver": "1.2.5",
+                "Node name for S&R": "ShowText|pysssss",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "3D\\Hy3D_00001_.glb"
+            ]
+        },
+        {
+            "id": 49,
+            "type": "Label (rgthree)",
+            "pos": [
+                -255.1625948376253,
+                1205.834057780482
+            ],
+            "size": [
+                392,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Segment-Partgen",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 47,
+            "type": "Label (rgthree)",
+            "pos": [
+                -265.3669849270826,
+                -279.03866039888015
+            ],
+            "size": [
+                584,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "ComfyUI-Hunyuan3D-Part",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 51,
+            "type": "Label (rgthree)",
+            "pos": [
+                -253.60603584534473,
+                1120.4219666813565
+            ],
+            "size": [
+                584,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "ComfyUI-Hunyuan3D-Part",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 45,
+            "type": "Trellis2ExportTrimesh",
+            "pos": [
+                1114.7876315830508,
+                1631.592587361709
+            ],
+            "size": [
+                270,
+                82
+            ],
+            "flags": {},
+            "order": 25,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 76
+                },
+                {
+                    "localized_name": "filename_prefix",
+                    "name": "filename_prefix",
+                    "shape": 7,
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "file_format",
+                    "name": "file_format",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_format"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "STRING",
+                    "links": [
+                        80
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "ComfyUI-TRELLIS2",
+                "ver": "c51adb5b212529a6ab62079f1e693155bcc21165",
+                "Node name for S&R": "Trellis2ExportTrimesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "trellis2",
+                "glb"
+            ]
+        },
+        {
+            "id": 21,
+            "type": "Hunyuan3DLoadMesh",
+            "pos": [
+                -241.20920972428982,
+                -39.61290834321549
+            ],
+            "size": [
+                270,
+                58
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_path",
+                    "name": "mesh_path",
+                    "shape": 7,
+                    "type": "STRING",
+                    "link": null
+                },
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        50
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "8e3542185d34c3d9937e0f4caa87ab1e0e6f84de",
+                "Node name for S&R": "Hunyuan3DLoadMesh",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "3d/TPose_Mesh.glb"
+            ]
+        },
+        {
+            "id": 27,
+            "type": "LoadP3SAMSegmentor",
+            "pos": [
+                -238.00475431011407,
+                141.3866842387426
+            ],
+            "size": [
+                270,
+                82
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "cache_on_gpu",
+                    "name": "cache_on_gpu",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "cache_on_gpu"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "enable_flash",
+                    "name": "enable_flash",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "enable_flash"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "links": [
+                        51
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "LoadP3SAMSegmentor",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                false,
+                true
+            ]
+        },
+        {
+            "id": 11,
+            "type": "LoadP3SAMSegmentor",
+            "pos": [
+                142.56690782555978,
+                190.2525511916846
+            ],
+            "size": [
+                270,
+                82
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "cache_on_gpu",
+                    "name": "cache_on_gpu",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "cache_on_gpu"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "enable_flash",
+                    "name": "enable_flash",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "enable_flash"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "links": [
+                        44
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "3225ee8fe61e3616a5485dc3466dc3e16e64198c",
+                "Node name for S&R": "LoadP3SAMSegmentor",
+                "cnr_id": "comfyui-hunyuan3d-part",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                false,
+                true
+            ]
+        },
+        {
+            "id": 39,
+            "type": "LoadP3SAMSegmentor",
+            "pos": [
+                -249.8622861421493,
+                2125.8437951300057
+            ],
+            "size": [
+                270,
+                82
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "cache_on_gpu",
+                    "name": "cache_on_gpu",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "cache_on_gpu"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "enable_flash",
+                    "name": "enable_flash",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "enable_flash"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "links": [
+                        69,
+                        71
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "LoadP3SAMSegmentor",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                false,
+                true
+            ]
+        },
+        {
+            "id": 40,
+            "type": "LoadP3SAMSegmentor",
+            "pos": [
+                142.95724334985775,
+                2186.4886634502773
+            ],
+            "size": [
+                270,
+                82
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "cache_on_gpu",
+                    "name": "cache_on_gpu",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "cache_on_gpu"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "enable_flash",
+                    "name": "enable_flash",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "enable_flash"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "links": [
+                        67
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "3225ee8fe61e3616a5485dc3466dc3e16e64198c",
+                "Node name for S&R": "LoadP3SAMSegmentor",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                false,
+                true
+            ]
+        },
+        {
+            "id": 35,
+            "type": "P3SAMSegmentMesh",
+            "pos": [
+                496.8570092834286,
+                1939.929663874502
+            ],
+            "size": [
+                300.46875,
+                190
+            ],
+            "flags": {},
+            "order": 18,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "link": 66
+                },
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "link": 67
+                },
+                {
+                    "localized_name": "prompt_num",
+                    "name": "prompt_num",
+                    "type": "INT",
+                    "widget": {
+                        "name": "prompt_num"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "prompt_bs",
+                    "name": "prompt_bs",
+                    "type": "INT",
+                    "widget": {
+                        "name": "prompt_bs"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "threshold",
+                    "name": "threshold",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "threshold"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "post_process",
+                    "name": "post_process",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "post_process"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        70,
+                        72
+                    ]
+                },
+                {
+                    "localized_name": "bounding_boxes",
+                    "name": "bounding_boxes",
+                    "type": "BBOXES_3D",
+                    "links": [
+                        73,
+                        78
+                    ]
+                },
+                {
+                    "localized_name": "face_ids",
+                    "name": "face_ids",
+                    "type": "FACE_IDS",
+                    "links": []
+                },
+                {
+                    "localized_name": "preview_path",
+                    "name": "preview_path",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "P3SAMSegmentMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                400,
+                10,
+                0.95,
+                true
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 37,
+            "type": "LoadXPartModels",
+            "pos": [
+                511.3221956928859,
+                1685.616959585354
+            ],
+            "size": [
+                283.5337890625,
+                130
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "precision",
+                    "name": "precision",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "precision"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cache_on_gpu",
+                    "name": "cache_on_gpu",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "cache_on_gpu"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "enable_flash",
+                    "name": "enable_flash",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "enable_flash"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "pc_size",
+                    "name": "pc_size",
+                    "type": "INT",
+                    "widget": {
+                        "name": "pc_size"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "xpart_models",
+                    "name": "xpart_models",
+                    "type": "XPART_MODELS",
+                    "links": [
+                        79
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "LoadXPartModels",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                "float16",
+                false,
+                true,
+                15360
+            ],
+            "color": "#233",
+            "bgcolor": "#355"
+        },
+        {
+            "id": 41,
+            "type": "ComputeMeshFeatures",
+            "pos": [
+                502.02061646569484,
+                2203.811007775211
+            ],
+            "size": [
+                287.765625,
+                150
+            ],
+            "flags": {},
+            "order": 21,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 70
+                },
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "link": 71
+                },
+                {
+                    "localized_name": "all_points",
+                    "name": "all_points",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "all_points"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "point_num",
+                    "name": "point_num",
+                    "type": "INT",
+                    "widget": {
+                        "name": "point_num"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "links": [
+                        77
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "ComputeMeshFeatures",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                true,
+                30000,
+                1,
+                "fixed"
+            ]
+        },
+        {
+            "id": 54,
+            "type": "Label (rgthree)",
+            "pos": [
+                347.92735734843393,
+                1857.81215835472
+            ],
+            "size": [
+                524,
+                30
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 9,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Mesh Segment 별로 Vertex Color 구분함",
+            "properties": {
+                "fontSize": 30,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 55,
+            "type": "Label (rgthree)",
+            "pos": [
+                841.5903000371849,
+                1804.6499931442572
+            ],
+            "size": [
+                439,
+                30
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 10,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "각각의 구분된 Part를 Mesh로 만듬",
+            "properties": {
+                "fontSize": 30,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 48,
+            "type": "Label (rgthree)",
+            "pos": [
+                -235.41567648450578,
+                -193.99849587089614
+            ],
+            "size": [
+                199,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 11,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Segment",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 36,
+            "type": "ComputeMeshFeatures",
+            "pos": [
+                153.1307871762222,
+                1939.929663874502
+            ],
+            "size": [
+                287.765625,
+                150
+            ],
+            "flags": {
+                "collapsed": false
+            },
+            "order": 16,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 68
+                },
+                {
+                    "localized_name": "p3sam_model",
+                    "name": "p3sam_model",
+                    "type": "MODEL",
+                    "link": 69
+                },
+                {
+                    "localized_name": "all_points",
+                    "name": "all_points",
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "all_points"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "point_num",
+                    "name": "point_num",
+                    "type": "INT",
+                    "widget": {
+                        "name": "point_num"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "links": [
+                        66
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "ComputeMeshFeatures",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                false,
+                30000,
+                1,
+                "fixed"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 52,
+            "type": "ShowText|pysssss",
+            "pos": [
+                1115.0720728216775,
+                1397.0333797169446
+            ],
+            "size": [
+                283.1539804291533,
+                167.20292789301686
+            ],
+            "flags": {},
+            "order": 28,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "link": 80
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "shape": 6,
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfyui-custom-scripts",
+                "ver": "1.2.5",
+                "Node name for S&R": "ShowText|pysssss",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "F:\\ComfyUI\\ComfyUI\\output\\trellis2_20260111_171726.glb"
+            ]
+        },
+        {
+            "id": 50,
+            "type": "Text",
+            "pos": [
+                448.83272160955056,
+                1058.3434705407594
+            ],
+            "size": [
+                499.06989175674767,
+                202.3348853173086
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "Prompt_bs : segment 갯수 지정\ncache_on_gpu : 성 끝나면 바로바로 GPU에서 모델 내려버려서 VRAM을 확보\n'포인트 클라우드 밀도(num_points)' 조절 : 기본 설정 부위당 40960 point"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 53,
+            "type": "Text",
+            "pos": [
+                972.8268439523318,
+                1056.9494055326898
+            ],
+            "size": [
+                1368.146469474126,
+                158.15373760039256
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                },
+                "Node name for S&R": "Text"
+            },
+            "widgets_values": [
+                "12G VRAM 최적화 옵션 (노드별)\n노드\t옵션\t기존 값 (추정)\t12GB VRAM 최적화 값\t이유\nLoad X-Part Models\tprecision\tfloat16\tbf16 또는 float16 유지\t모델 로딩 정밀도. float16이 기본 절약 옵션입니다.\nLoad X-Part Models\tcache_on_gpu\tfalse\tfalse 유지\t모델을 VRAM이 아닌 일반 RAM에 캐시하여 VRAM 절약.\nLoad X-Part Models\tpc_size\t25600\t10000 ~ 15000\t가장 중요한 옵션. 포인트 클라우드 크기가 메모리 사용량을 크게 결정합니다. 최대한 줄여보세요.\nCompute Mesh Features (1)\tpoint_num\t50000\t30000 ~ 40000\t메모리 사용량에 영향. pc_size와 균형을 맞추기 위해 약간 줄입니다.\nX-Part Generate Parts\toctree_resolution\t256\t128\t매우 중요한 옵션. 생성되는 옥트리 해상도. 낮을수록 디테일은 떨어지지만 VRAM 사용량은 대폭 감소합니다.\nX-Part Generate Parts\tnum_inference_steps\t25\t10 ~ 20\t추론 단계 수를 줄여 중간 계산에 필요한 VRAM을 절약합니다.\nX-Part Generate Parts\tnum_chunks\t10000\t1 ~ 10\t매우 중요한 옵션. 3D 객체를 분할하여 처리하는 갯수. VRAM이 부족하다면 1로 설정하여 청크를 비활성화하거나 아주 낮은 값으로 시도해 보세요. (단, 일부 모델은 청크가 필요할 수 있습니다.)"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 38,
+            "type": "Hunyuan3DLoadMesh",
+            "pos": [
+                -227.30661551553123,
+                1939.929663874502
+            ],
+            "size": [
+                270,
+                58
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_path",
+                    "name": "mesh_path",
+                    "shape": 7,
+                    "type": "STRING",
+                    "link": null
+                },
+                {
+                    "localized_name": "file_path",
+                    "name": "file_path",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "file_path"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "links": [
+                        68
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "8e3542185d34c3d9937e0f4caa87ab1e0e6f84de",
+                "Node name for S&R": "Hunyuan3DLoadMesh",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                "3d/ship_20260111_161439.glb"
+            ],
+            "color": "#233",
+            "bgcolor": "#355"
+        },
+        {
+            "id": 46,
+            "type": "XPartGenerateParts",
+            "pos": [
+                910.796475835317,
+                1924.9215770983135
+            ],
+            "size": [
+                281.759765625,
+                262
+            ],
+            "flags": {},
+            "order": 24,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh_with_features",
+                    "name": "mesh_with_features",
+                    "type": "MESH_FEATURES",
+                    "link": 77
+                },
+                {
+                    "localized_name": "bounding_boxes",
+                    "name": "bounding_boxes",
+                    "type": "BBOXES_3D",
+                    "link": 78
+                },
+                {
+                    "localized_name": "xpart_models",
+                    "name": "xpart_models",
+                    "type": "XPART_MODELS",
+                    "link": 79
+                },
+                {
+                    "localized_name": "octree_resolution",
+                    "name": "octree_resolution",
+                    "type": "INT",
+                    "widget": {
+                        "name": "octree_resolution"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "num_inference_steps",
+                    "name": "num_inference_steps",
+                    "type": "INT",
+                    "widget": {
+                        "name": "num_inference_steps"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "guidance_scale",
+                    "name": "guidance_scale",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "guidance_scale"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "num_chunks",
+                    "name": "num_chunks",
+                    "type": "INT",
+                    "widget": {
+                        "name": "num_chunks"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "output_coordinate_system",
+                    "name": "output_coordinate_system",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "output_coordinate_system"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "part_meshes",
+                    "name": "part_meshes",
+                    "type": "TRIMESH",
+                    "links": [
+                        76,
+                        82
+                    ]
+                },
+                {
+                    "localized_name": "bbox_viz",
+                    "name": "bbox_viz",
+                    "type": "TRIMESH",
+                    "links": null
+                },
+                {
+                    "localized_name": "parts_path",
+                    "name": "parts_path",
+                    "type": "STRING",
+                    "links": [
+                        74
+                    ]
+                },
+                {
+                    "localized_name": "bbox_path",
+                    "name": "bbox_path",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "5e29c85add62edcb9a422329d1db776d327a5a5b",
+                "Node name for S&R": "XPartGenerateParts",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                256,
+                20,
+                -1,
+                1,
+                "fixed",
+                10000,
+                "Y-up (default)"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 57,
+            "type": "ExplodedMeshViewer",
+            "pos": [
+                1432.6456666816646,
+                1392.9250110744078
+            ],
+            "size": [
+                600,
+                650
+            ],
+            "flags": {},
+            "order": 26,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "mesh",
+                    "name": "mesh",
+                    "type": "TRIMESH",
+                    "link": 82
+                },
+                {
+                    "localized_name": "face_ids",
+                    "name": "face_ids",
+                    "shape": 7,
+                    "type": "FACE_IDS",
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "992992defe79db1c02d5958afa10061aae360c10",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "Node name for S&R": "ExplodedMeshViewer"
+            },
+            "widgets_values": [
+                ""
+            ]
+        },
+        {
+            "id": 42,
+            "type": "Hunyuan3DPreviewBoundingBoxes",
+            "pos": [
+                880.4959523276449,
+                2278.505160959957
+            ],
+            "size": [
+                512,
+                722
+            ],
+            "flags": {},
+            "order": 22,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "trimesh",
+                    "name": "trimesh",
+                    "type": "TRIMESH",
+                    "link": 72
+                },
+                {
+                    "localized_name": "bboxes",
+                    "name": "bboxes",
+                    "type": "BBOXES_3D",
+                    "link": 73
+                },
+                {
+                    "localized_name": "line_width",
+                    "name": "line_width",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "line_width"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "aux_id": "PozzettiAndrea/ComfyUI-Hunyuan3D-Part",
+                "ver": "0f07788d9eef3387c24edde1698d06e4c5d3c0d3",
+                "Node name for S&R": "Hunyuan3DPreviewBoundingBoxes",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "comfyui-hunyuan3d-part"
+            },
+            "widgets_values": [
+                1.6,
+                ""
+            ]
+        }
+    ],
+    "links": [
+        [
+            44,
+            11,
+            0,
+            26,
+            1,
+            "MODEL"
+        ],
+        [
+            47,
+            26,
+            0,
+            20,
+            0,
+            "TRIMESH"
+        ],
+        [
+            48,
+            26,
+            1,
+            20,
+            1,
+            "BBOXES_3D"
+        ],
+        [
+            50,
+            21,
+            0,
+            28,
+            0,
+            "TRIMESH"
+        ],
+        [
+            51,
+            27,
+            0,
+            28,
+            1,
+            "MODEL"
+        ],
+        [
+            52,
+            28,
+            0,
+            26,
+            0,
+            "MESH_FEATURES"
+        ],
+        [
+            63,
+            26,
+            0,
+            31,
+            0,
+            "TRIMESH"
+        ],
+        [
+            64,
+            31,
+            0,
+            33,
+            0,
+            "STRING"
+        ],
+        [
+            66,
+            36,
+            0,
+            35,
+            0,
+            "MESH_FEATURES"
+        ],
+        [
+            67,
+            40,
+            0,
+            35,
+            1,
+            "MODEL"
+        ],
+        [
+            68,
+            38,
+            0,
+            36,
+            0,
+            "TRIMESH"
+        ],
+        [
+            69,
+            39,
+            0,
+            36,
+            1,
+            "MODEL"
+        ],
+        [
+            70,
+            35,
+            0,
+            41,
+            0,
+            "TRIMESH"
+        ],
+        [
+            71,
+            39,
+            0,
+            41,
+            1,
+            "MODEL"
+        ],
+        [
+            72,
+            35,
+            0,
+            42,
+            0,
+            "TRIMESH"
+        ],
+        [
+            73,
+            35,
+            1,
+            42,
+            1,
+            "BBOXES_3D"
+        ],
+        [
+            74,
+            46,
+            2,
+            43,
+            2,
+            "STRING"
+        ],
+        [
+            76,
+            46,
+            0,
+            45,
+            0,
+            "TRIMESH"
+        ],
+        [
+            77,
+            41,
+            0,
+            46,
+            0,
+            "MESH_FEATURES"
+        ],
+        [
+            78,
+            35,
+            1,
+            46,
+            1,
+            "BBOXES_3D"
+        ],
+        [
+            79,
+            37,
+            0,
+            46,
+            2,
+            "XPART_MODELS"
+        ],
+        [
+            80,
+            45,
+            0,
+            52,
+            0,
+            "STRING"
+        ],
+        [
+            82,
+            46,
+            0,
+            57,
+            0,
+            "TRIMESH"
+        ]
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "title": "Group",
+            "bounding": [
+                -259.86228614214923,
+                1321.2629385371206,
+                2252.6038781369334,
+                1689.2422224228376
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 2,
+            "title": "Group",
+            "bounding": [
+                -251.20920972428982,
+                -113.21290834321547,
+                1789.6557301858456,
+                1092.8674634975948
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        }
+    ],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.9624449953694171,
+            "offset": [
+                577.2007220895947,
+                -1165.4360373806544
+            ]
+        },
+        "frontendVersion": "1.28.8",
+        "workflowRendererVersion": "LG",
+        "ue_links": [],
+        "links_added_by_ue": []
+    },
+    "version": 0.4
+}
