@@ -1,0 +1,1258 @@
+{
+    "id": "6ecb83ee-b049-4df7-8302-b7bcafabfb56",
+    "revision": 0,
+    "last_node_id": 32,
+    "last_link_id": 28,
+    "nodes": [
+        {
+            "id": 19,
+            "type": "FL_HeartMuLa_Sampler",
+            "pos": [
+                -4014.722543157629,
+                -3360.9072311086456
+            ],
+            "size": [
+                240.61542770548357,
+                174
+            ],
+            "flags": {},
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 26
+                },
+                {
+                    "localized_name": "conditioning",
+                    "name": "conditioning",
+                    "type": "HEARTMULA_COND",
+                    "link": 27
+                },
+                {
+                    "localized_name": "max_duration_sec",
+                    "name": "max_duration_sec",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "max_duration_sec"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "temperature",
+                    "name": "temperature",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "temperature"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "top_k",
+                    "name": "top_k",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "top_k"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "audio_tokens",
+                    "name": "audio_tokens",
+                    "type": "HEARTMULA_TOKENS",
+                    "links": [
+                        25
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Sampler",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                120,
+                1,
+                50,
+                90,
+                "fixed"
+            ]
+        },
+        {
+            "id": 20,
+            "type": "FL_HeartMuLa_ModelLoader",
+            "pos": [
+                -4715.090874865411,
+                -3449.016294654442
+            ],
+            "size": [
+                287.9,
+                154
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model_version",
+                    "name": "model_version",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "model_version"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "memory_mode",
+                    "name": "memory_mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "memory_mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "precision",
+                    "name": "precision",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "precision"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "use_4bit",
+                    "name": "use_4bit",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "use_4bit"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "force_reload",
+                    "name": "force_reload",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "force_reload"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "links": [
+                        23,
+                        24,
+                        26
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "26fe7300d6596ced296f6ec80bc8179c9ea7b651",
+                "Node name for S&R": "FL_HeartMuLa_ModelLoader",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "3B",
+                "auto",
+                "auto",
+                true,
+                true
+            ]
+        },
+        {
+            "id": 18,
+            "type": "FL_HeartMuLa_Decode",
+            "pos": [
+                -3722.935735546914,
+                -3433.5704857398778
+            ],
+            "size": [
+                283.4600324112174,
+                46
+            ],
+            "flags": {},
+            "order": 15,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 24
+                },
+                {
+                    "localized_name": "audio_tokens",
+                    "name": "audio_tokens",
+                    "type": "HEARTMULA_TOKENS",
+                    "link": 25
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "audio",
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                        28
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Decode",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 8,
+            "type": "FL_HeartMuLa_Decode",
+            "pos": [
+                -5318.183008597259,
+                -3436.983335503862
+            ],
+            "size": [
+                188.6841796875,
+                46
+            ],
+            "flags": {},
+            "order": 16,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 21
+                },
+                {
+                    "localized_name": "audio_tokens",
+                    "name": "audio_tokens",
+                    "type": "HEARTMULA_TOKENS",
+                    "link": 8
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "audio",
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "links": [
+                        9
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Decode",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 7,
+            "type": "FL_HeartMuLa_Sampler",
+            "pos": [
+                -5649.623804111311,
+                -3366.6362879181474
+            ],
+            "size": [
+                240.61542770548357,
+                174
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 22
+                },
+                {
+                    "localized_name": "conditioning",
+                    "name": "conditioning",
+                    "type": "HEARTMULA_COND",
+                    "link": 13
+                },
+                {
+                    "localized_name": "max_duration_sec",
+                    "name": "max_duration_sec",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "max_duration_sec"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "temperature",
+                    "name": "temperature",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "temperature"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "top_k",
+                    "name": "top_k",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "top_k"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "shape": 7,
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "audio_tokens",
+                    "name": "audio_tokens",
+                    "type": "HEARTMULA_TOKENS",
+                    "links": [
+                        8
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Sampler",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                120,
+                1,
+                50,
+                90,
+                "fixed"
+            ]
+        },
+        {
+            "id": 22,
+            "type": "Label (rgthree)",
+            "pos": [
+                -6408.944436982267,
+                -3609.5280329955785
+            ],
+            "size": [
+                1134,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "KPOP 발라드 : Fly High 120초 / 생성 시간 37분 24초",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 23,
+            "type": "Label (rgthree)",
+            "pos": [
+                -4721.184723042779,
+                -3620.3520293104193
+            ],
+            "size": [
+                1238,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "KPOP 발라드 : 시간이 지나면 120초 / 생성 시간 26분 46초",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 26,
+            "type": "Label (rgthree)",
+            "pos": [
+                -6403.944436982267,
+                -3699.13802797703
+            ],
+            "size": [
+                444,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Bright K-Pop Dance",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 27,
+            "type": "Label (rgthree)",
+            "pos": [
+                -4715.442604022004,
+                -3700.259870962998
+            ],
+            "size": [
+                378,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Emotional Ballad",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 29,
+            "type": "Label (rgthree)",
+            "pos": [
+                -7164.414494431544,
+                -3570.573794796532
+            ],
+            "size": [
+                536,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "스타일 태그(Tags) 총정리",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 31,
+            "type": "Label (rgthree)",
+            "pos": [
+                -7847.814414039761,
+                -3574.2279483474586
+            ],
+            "size": [
+                304,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "가사 작성 꿀팁",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 9,
+            "type": "FL_HeartMuLa_Conditioning",
+            "pos": [
+                -6406.193117773305,
+                -3204.4534465526035
+            ],
+            "size": [
+                709.1122121303742,
+                554.5999264343718
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 19
+                },
+                {
+                    "localized_name": "lyrics",
+                    "name": "lyrics",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "lyrics"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "tags",
+                    "name": "tags",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "tags"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cfg_scale",
+                    "name": "cfg_scale",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cfg_scale"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "conditioning",
+                    "name": "conditioning",
+                    "type": "HEARTMULA_COND",
+                    "links": [
+                        13
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Conditioning",
+                "ue_properties": {
+                    "widget_ue_connectable": {
+                        "tags": true
+                    },
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "[Intro]\nYeah, turn it up!\nHere we go, feel the vibe\nLet's dance!\n\n[Verse]\n창문을 활짝 열어봐 쏟아지는 햇살\n어제 일은 잊어버려 오늘은 우리 날\n가벼운 운동화 끈 꽉 묶고서\n어디든 갈 수 있어 망설이지 마\n\n[Prechorus]\n들려오는 비트 소리 심장이 반응해\n(Can you feel it?)\n준비는 끝났어 지금 이 순간\n\n[Chorus]\n저 하늘 위로 손을 뻗어 봐\n리듬 속에 몸을 맡겨 봐\n우린 빛나는 별처럼 춤을 춰\n걱정 따윈 날려버려 Fly high\nOh- oh- 이 기분 그대로\n끝나지 않을 파티를 시작해\n\n[Verse]\n복잡한 도시는 우리 무대가 돼\n네온 사인 불빛도 우릴 비추네\n볼륨을 더 높여봐 크게 소리쳐\n지루한 일상은 다 뒤로 던져놔\n\n[Bridge]\n시간이 멈춘 듯해 너와 나 사이\n이 느낌 이대로 영원히\n(Don't stop, don't stop moving)\n\n[Chorus]\n저 하늘 위로 손을 뻗어 봐\n리듬 속에 몸을 맡겨 봐\n우린 빛나는 별처럼 춤을 춰\n걱정 따윈 날려버려 Fly high\n\n[Outro]\nYeah, just like this\nDancing in the moonlight\n우린 멈추지 않아\nForever",
+                "k-pop, dance pop, female vocal, energetic, uplifting, bright, synth, fast tempo, summer vibe, rhythmic",
+                1.5,
+                {
+                    "name": "Edit Lyrics",
+                    "options": {},
+                    "type": "button",
+                    "y": 136,
+                    "last_y": 136,
+                    "computedDisabled": false,
+                    "clicked": false,
+                    "computedHeight": 24
+                }
+            ],
+            "color": "#c63",
+            "bgcolor": "#c63"
+        },
+        {
+            "id": 5,
+            "type": "PreviewAudio",
+            "pos": [
+                -5379.603767842415,
+                -3321.9402515935626
+            ],
+            "size": [
+                360.70907233625474,
+                88
+            ],
+            "flags": {},
+            "order": 18,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "audio",
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 9
+                },
+                {
+                    "localized_name": "audioUI",
+                    "name": "audioUI",
+                    "type": "AUDIO_UI",
+                    "widget": {
+                        "name": "audioUI"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.7.0",
+                "Node name for S&R": "PreviewAudio",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 17,
+            "type": "FL_HeartMuLa_Conditioning",
+            "pos": [
+                -4711.265698501016,
+                -3224.2216898209795
+            ],
+            "size": [
+                642.5571406741828,
+                592.4564385212152
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "link": 23
+                },
+                {
+                    "localized_name": "lyrics",
+                    "name": "lyrics",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "lyrics"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "tags",
+                    "name": "tags",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "tags"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cfg_scale",
+                    "name": "cfg_scale",
+                    "shape": 7,
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cfg_scale"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "conditioning",
+                    "name": "conditioning",
+                    "type": "HEARTMULA_COND",
+                    "links": [
+                        27
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "2cda3e353800781e26977e081c7a5f0b80c134d2",
+                "Node name for S&R": "FL_HeartMuLa_Conditioning",
+                "ue_properties": {
+                    "widget_ue_connectable": {
+                        "tags": true
+                    },
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "[Intro]\n(Soft piano melody)\n우- 우-\n\n[Verse]\n차가운 바람이 옷깃을 스치면\n어느새 너의 기억이 또 불어와\n함께 걷던 이 길가에 서서\n지워진 발자국만 멍하니 바라봐\n\n[Prechorus]\n괜찮을 거라고 다짐해 봐도\n아직 내 마음은 널 놓지 못하나 봐\n수많은 밤을 지새워도\n너의 목소리가 귓가에 맴돌아\n\n[Chorus]\n시간이 지나면 잊혀질까\n사랑했던 모든 순간들이\n눈을 감으면 선명해지는 너를\n어떻게 보내야 할까\n아직 너를 기다리는 바보 같은 나\n\n[Verse]\n익숙한 벨소리에 놀라 전화기를 보면\n의미 없는 알람들만 가득해\n혹시나 하는 마음에 또 무너져\n텅 빈 방 안에 혼자 남겨진 채\n\n[Bridge]\n미안해 더 잘해주지 못해서\n후회만 남은 계절이 지나가\n(I still love you, I need you)\n\n[Chorus]\n시간이 지나면 잊혀질까\n사랑했던 모든 순간들이\n눈을 감으면 선명해지는 너를\n어떻게 보내야 할까\n제발 내게 다시 돌아와 줘\n\n[Outro]\n오늘도 난 이 자리에서\n널 그리며 잠이 들어\n사랑해...\n(Piano fade out)",
+                "k-pop, ballad, emotional, piano, strings, slow tempo, sentimental, melancholic, soft vocal, solo",
+                1.5,
+                {
+                    "name": "Edit Lyrics",
+                    "options": {},
+                    "type": "button",
+                    "y": 136,
+                    "last_y": 136,
+                    "computedDisabled": false,
+                    "clicked": false,
+                    "computedHeight": 24
+                }
+            ],
+            "color": "#36c",
+            "bgcolor": "#36c"
+        },
+        {
+            "id": 21,
+            "type": "PreviewAudio",
+            "pos": [
+                -3712.5353044635494,
+                -3330.668759865324
+            ],
+            "size": [
+                360.70907233625474,
+                88
+            ],
+            "flags": {},
+            "order": 17,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "audio",
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 28
+                },
+                {
+                    "localized_name": "audioUI",
+                    "name": "audioUI",
+                    "type": "AUDIO_UI",
+                    "widget": {
+                        "name": "audioUI"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.7.0",
+                "Node name for S&R": "PreviewAudio",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 28,
+            "type": "Text",
+            "pos": [
+                -7178.649045105749,
+                -3466.8964331133293
+            ],
+            "size": [
+                627.1833773460294,
+                938.6942745823721
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text"
+            },
+            "widgets_values": [
+                "\n\n 2. 장르별 '치트키' 조합 (복사해서 쓰세요)\n----------------------------------------------------------------------------------\n원하는 장르에 맞춰 아래 조합을 복사한 뒤, **보컬 성별(Female/Male)**만 바꿔서 사용해 보세요.\n\n💃 신나는 댄스/아이돌 (K-Pop Dance)\nk-pop, dance pop, female vocal, energetic, catchy, synthesizer, heavy bass, fast tempo, bright, rhythmic, high quality\n😢 감성 발라드 (Emotional Ballad)\nk-pop, ballad, male vocal, emotional, sad, piano, strings, slow tempo, sentimental, touching, studio recording\n🎸 모던 락/밴드 (Modern Rock)\nrock, alternative rock, male vocal, electric guitar, drums, bass, energetic, powerful, band sound, raw\n🧢 트렌디한 힙합/알앤비 (Hip-hop / R&B)\nhip-hop, r&b, melodic rap, male vocal, chill, groovy, 808 bass, beat, urban, night vibe\n☕ 카페 감성/어쿠스틱 (Acoustic / Folk)\nacoustic, folk, indie pop, female vocal, acoustic guitar, soft piano, relaxing, calm, warm, coffee shop vibe\n🎷 재즈/라운지 (Jazz)\njazz, smooth jazz, female vocal, saxophone, piano, double bass, brush drums, classy, relaxing, night bar\n🎬 웅장한 영화 음악 (Epic OST)\ncinematic, orchestral, epic, choir, strings, brass, percussion, dramatic, emotional, build up, soundtrack\n\n💡 3. 태그 작성 팁 (Tip)\n순서가 중요합니다:\n가장 중요한 장르나 악기를 앞에 쓰세요.\n(O) rock, electric guitar, angry (락 느낌이 강함)\n(X) angry, electric guitar, rock (화난 느낌이 강함)\n너무 많이 넣지 마세요:\n태그가 너무 많으면 모델이 혼란스러워할 수 있습니다. 핵심 단어 5~10개 정도가 적당합니다.\n반대되는 태그 피하기:\nhappy와 sad를 같이 넣으면 결과물이 애매해지거나 기괴해질 수 있습니다.\n\n이 태그들은 Conditioning 노드의 tags 입력창에 영어로, **콤마(,)**로 구분하여 입력해야 합니다.\n\n🗂️ 1. 카테고리별 태그 사전\n🎤 보컬 타입 (Vocal)\n가장 먼저 정해야 할 요소입니다.\nFemale vocal: 여자 보컬\nMale vocal: 남자 보컬\nDuet: 듀엣 (남녀 혼성 등)\nChoir: 합창/코러스\nRap: 랩\nInstrumental: 보컬 없는 연주곡 (중요: 가사를 입력해도 이 태그가 있으면 보컬이 안 나올 수 있음)\n🎸 장르 (Genre)\n곡의 전체적인 뼈대입니다.\nPop: 팝\nK-pop: 케이팝 (한국어 가사와 궁합 최상)\nBallad: 발라드\nRock: 락 (Hard rock, Indie rock, Alternative rock 등으로 세분화 가능)\nHip-hop: 힙합\nR&B: 알앤비\nElectronic / EDM: 일렉트로닉, 댄스\nJazz: 재즈\nClassical: 클래식\nFolk / Acoustic: 포크, 어쿠스틱\nMetal: 메탈 (Heavy metal)\nLo-fi: 로파이 (차분한 비트)\nCinematic / Soundtrack: 영화 음악, OST 스타일\n🌈 분위기 (Mood)\n곡의 감성을 결정합니다.\nEnergetic: 활기찬, 에너지가 넘치는\nUplifting: 기분을 고조시키는, 희망찬\nHappy / Cheerful: 행복한, 명랑한\nSad / Melancholic: 슬픈, 우울한, 처연한\nEmotional: 감성적인, 호소력 짙은\nDark: 어두운, 무거운\nDreamy / Ethereal: 몽환적인\nChill / Relaxing: 편안한, 나른한\nRomantic: 로맨틱한\nAggressive: 공격적인, 강렬한\nEpic: 웅장한 (게임/영화 음악에 적합)\n🎹 악기 (Instruments)\n특정 악기 소리를 강조하고 싶을 때 사용합니다.\nPiano: 피아노\nGuitar: 기타 (Acoustic guitar / Electric guitar / Distortion guitar)\nDrums: 드럼 (Heavy drums)\nBass: 베이스 (808 bass)\nSynthesizer / Synth: 신디사이저 (전자음)\nStrings: 스트링 (바이올린 등 현악기, 웅장함/슬픔 표현에 좋음)\nBrass: 브라스 (트럼펫 등 금관악기, 펑키함/웅장함)\n⏱️ 템포 및 품질 (Tempo & Quality)\nFast / Up tempo: 빠른 박자\nMedium tempo: 중간 박자\nSlow / Down tempo: 느린 박자\nHigh quality: 고음질 (습관적으로 넣어주면 좋습니다)\nStudio recording: 스튜디오 녹음 느낌"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 30,
+            "type": "Text",
+            "pos": [
+                -7846.5437980534925,
+                -3470.328677407795
+            ],
+            "size": [
+                627.1833773460294,
+                938.6942745823721
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                },
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text"
+            },
+            "widgets_values": [
+                "FL HeartMuLa가 노래를 더 잘 부르게 하려면, AI가 이해할 수 있는 문법으로 가사를 작성해야 합니다.\n그냥 줄글로 쓰는 것보다, 아래 규칙을 지키면 훨씬 자연스럽고 퀄리티 높은 노래가 나옵니다.\n1. 필수 규칙: 구조 마커 (Section Markers)\n가사의 각 부분이 어떤 역할을 하는지 AI에게 알려주는 표지판입니다. 반드시 **대괄호 []**를 사용해야 합니다.\n마커\t역할\t설명\n[Intro]\t전주\t노래의 시작. (Instrumental)이라고 적거나 짧은 내레이션을 넣음.\n[Verse]\t절\t이야기를 풀어나가는 부분. 1절, 2절에 사용.\n[Prechorus]\t프리코러스\t절과 후렴 사이의 연결고리. 분위기가 고조되는 구간.\n[Chorus]\t후렴\t노래의 하이라이트(Hook). 가장 신나거나 감정적인 부분.\n[Bridge]\t브릿지\t후반부에 분위기를 전환하거나 쉬어가는 구간.\n[Outro]\t후주\t노래의 마무리. 여운을 남기거나 페이드 아웃.\n[Instrumental]\t간주\t보컬 없이 악기 연주만 나오는 구간 (기타 솔로 등).\n2. 가사 작성 꿀팁 (AI가 잘 부르는 법)\n① 줄바꿈을 자주 하세요\n한 줄이 너무 길면 AI가 숨 쉴 틈 없이 랩 하듯이 빠르게 뱉어버릴 수 있습니다.\nBad: 너를 처음 만난 그 순간부터 내 심장은 멈추지 않고 계속 뛰고 있어 마치 고장 난 시계처럼\nGood:\n너를 처음 만난 그 순간부터\n내 심장은 멈추지 않아\n마치 고장 난 시계처럼\n② 글자 수(음절)를 맞추세요 (운율)\n비슷한 위치의 줄끼리 글자 수를 비슷하게 맞추면 리듬감이 좋아집니다.\n예시:\n어두운 밤하늘 별빛 (7글자)\n내게로 다가온 눈빛 (7글자)\n(끝 글자를 맞추면 라임이 살아납니다!)\n③ 괄호 ()로 추임새 넣기\n메인 보컬 외에 코러스나 효과음을 넣고 싶다면 소괄호를 사용하세요.\n예: (Yeah, let's go), (Oh- oh-), (사랑해)\n④ 영어 섞어 쓰기 (K-Pop 스타일)\n한국어 가사 중간에 짧은 영어를 섞으면 요즘 아이돌 노래 느낌이 잘 납니다.\n예: 내 맘을 받아줘 My love, 오늘 밤은 Fire\n3. 실전 템플릿 (그대로 복사해서 내용만 바꾸세요)\n가장 대중적인 [Verse - Chorus - Verse - Chorus] 구조입니다.\ncode\nText\n[Intro]\n(분위기에 맞는 짧은 영어 내레이션이나 의성어)\nYeah, listen simply.\n\n[Verse]\n(이야기의 시작, 차분하게)\n첫 번째 줄 가사 입력\n두 번째 줄 가사 입력\n세 번째 줄 가사 입력\n네 번째 줄 가사 입력\n\n[Prechorus]\n(점점 고조되는 분위기)\n변화하는 감정을 적으세요\n준비는 끝났어 (Oh yeah)\n\n[Chorus]\n(가장 하고 싶은 말, 주제)\n하이라이트 가사 첫 번째\n하이라이트 가사 두 번째\n반복되는 중독성 있는 문구\n마지막 결정적 한 마디\n\n[Verse]\n(2절 시작, 1절과 비슷한 길이로)\n다시 이어지는 이야기\n새로운 내용을 적으세요\n\n[Chorus]\n(1절 후렴과 같거나 약간 변형)\n하이라이트 가사 첫 번째\n하이라이트 가사 두 번째\n반복되는 중독성 있는 문구\n마지막 결정적 한 마디\n\n[Bridge]\n(분위기 전환)\n잠시 쉬어가거나 감정을 폭발시킴\n새로운 멜로디의 느낌으로\n\n[Chorus]\n(마지막 후렴, 웅장하게)\n다시 한번 하이라이트 반복\n\n[Outro]\n(마무리)\n점점 사라지듯이...\n끝맺음 인사\n✨ 요약\n**대괄호 []**로 구역 나누기 필수!\n가사는 짧게 끊어서 줄바꿈 하기!\n**소괄호 ()**로 추임새(Yeah, Oh) 넣기!"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 14,
+            "type": "FL_HeartMuLa_ModelLoader",
+            "pos": [
+                -6407.498762197027,
+                -3437.0977498507355
+            ],
+            "size": [
+                287.9,
+                154
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model_version",
+                    "name": "model_version",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "model_version"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "memory_mode",
+                    "name": "memory_mode",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "memory_mode"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "precision",
+                    "name": "precision",
+                    "shape": 7,
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "precision"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "use_4bit",
+                    "name": "use_4bit",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "use_4bit"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "force_reload",
+                    "name": "force_reload",
+                    "shape": 7,
+                    "type": "BOOLEAN",
+                    "widget": {
+                        "name": "force_reload"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "HEARTMULA_MODEL",
+                    "links": [
+                        19,
+                        21,
+                        22
+                    ]
+                }
+            ],
+            "properties": {
+                "aux_id": "filliptm/ComfyUI_FL-HeartMuLa",
+                "ver": "26fe7300d6596ced296f6ec80bc8179c9ea7b651",
+                "Node name for S&R": "FL_HeartMuLa_ModelLoader",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "3B",
+                "auto",
+                "auto",
+                true,
+                true
+            ]
+        },
+        {
+            "id": 32,
+            "type": "Label (rgthree)",
+            "pos": [
+                -6519.31491391164,
+                -2737.5099870963363
+            ],
+            "size": [
+                106,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 10,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "Tags",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        }
+    ],
+    "links": [
+        [
+            8,
+            7,
+            0,
+            8,
+            1,
+            "HEARTMULA_TOKENS"
+        ],
+        [
+            9,
+            8,
+            0,
+            5,
+            0,
+            "AUDIO"
+        ],
+        [
+            13,
+            9,
+            0,
+            7,
+            1,
+            "HEARTMULA_COND"
+        ],
+        [
+            19,
+            14,
+            0,
+            9,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            21,
+            14,
+            0,
+            8,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            22,
+            14,
+            0,
+            7,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            23,
+            20,
+            0,
+            17,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            24,
+            20,
+            0,
+            18,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            25,
+            19,
+            0,
+            18,
+            1,
+            "HEARTMULA_TOKENS"
+        ],
+        [
+            26,
+            20,
+            0,
+            19,
+            0,
+            "HEARTMULA_MODEL"
+        ],
+        [
+            27,
+            17,
+            0,
+            19,
+            1,
+            "HEARTMULA_COND"
+        ],
+        [
+            28,
+            18,
+            0,
+            21,
+            0,
+            "AUDIO"
+        ]
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "title": "Group",
+            "bounding": [
+                -6427.321592004713,
+                -3524.2904152671904,
+                1421.3793601349162,
+                905.0050379356062
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        },
+        {
+            "id": 2,
+            "title": "Group",
+            "bounding": [
+                -4736.669927709818,
+                -3538.327477938318,
+                1429.203623157232,
+                930.8535236367043
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        }
+    ],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 0.876922695000012,
+            "offset": [
+                7147.02893130898,
+                3812.0508711754364
+            ]
+        },
+        "workflowRendererVersion": "LG",
+        "frontendVersion": "1.35.9",
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true,
+        "ue_links": [],
+        "links_added_by_ue": []
+    },
+    "version": 0.4
+}
