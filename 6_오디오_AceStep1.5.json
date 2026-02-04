@@ -1,0 +1,1108 @@
+{
+    "id": "88ac5dad-efd7-40bb-84fe-fbaefdee1fa9",
+    "revision": 0,
+    "last_node_id": 123,
+    "last_link_id": 288,
+    "nodes": [
+        {
+            "id": 110,
+            "type": "ConditioningZeroOut",
+            "pos": [
+                849.7521283290746,
+                -1044.2262124266115
+            ],
+            "size": [
+                204.134765625,
+                26
+            ],
+            "flags": {
+                "collapsed": false
+            },
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "conditioning",
+                    "name": "conditioning",
+                    "type": "CONDITIONING",
+                    "link": 267
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "CONDITIONING",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        270
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "ConditioningZeroOut",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": [],
+            "color": "#322",
+            "bgcolor": "#533"
+        },
+        {
+            "id": 111,
+            "type": "KSampler",
+            "pos": [
+                1159.7521283290732,
+                -1424.2262124266115
+            ],
+            "size": [
+                329.38802083333337,
+                262
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 268
+                },
+                {
+                    "localized_name": "positive",
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 269
+                },
+                {
+                    "localized_name": "negative",
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 270
+                },
+                {
+                    "localized_name": "latent_image",
+                    "name": "latent_image",
+                    "type": "LATENT",
+                    "link": 271
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "steps",
+                    "name": "steps",
+                    "type": "INT",
+                    "widget": {
+                        "name": "steps"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "cfg",
+                    "name": "cfg",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "cfg"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "sampler_name",
+                    "name": "sampler_name",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "sampler_name"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "scheduler",
+                    "name": "scheduler",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "scheduler"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "denoise",
+                    "name": "denoise",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "denoise"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "LATENT",
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "slot_index": 0,
+                    "links": [
+                        275
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "KSampler",
+                "ue_properties": {
+                    "widget_ue_connectable": {
+                        "seed": true
+                    },
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": [
+                31,
+                "fixed",
+                8,
+                1,
+                "euler",
+                "simple",
+                1
+            ]
+        },
+        {
+            "id": 115,
+            "type": "VAEDecodeAudio",
+            "pos": [
+                1269.752128329073,
+                -1544.2262124266115
+            ],
+            "size": [
+                190,
+                46
+            ],
+            "flags": {
+                "collapsed": false
+            },
+            "order": 13,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "samples",
+                    "name": "samples",
+                    "type": "LATENT",
+                    "link": 275
+                },
+                {
+                    "localized_name": "vae",
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 276
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "AUDIO",
+                    "name": "AUDIO",
+                    "type": "AUDIO",
+                    "links": [
+                        277
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "VAEDecodeAudio",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 117,
+            "type": "EmptyAceStep1.5LatentAudio",
+            "pos": [
+                739.752128329076,
+                -944.2262124266116
+            ],
+            "size": [
+                314.89583333333337,
+                82
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "seconds",
+                    "name": "seconds",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "seconds"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "batch_size",
+                    "name": "batch_size",
+                    "type": "INT",
+                    "widget": {
+                        "name": "batch_size"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "LATENT",
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                        271
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "EmptyAceStep1.5LatentAudio",
+                "ue_properties": {
+                    "widget_ue_connectable": {
+                        "seconds": true
+                    },
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": [
+                120,
+                1
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 109,
+            "type": "ModelSamplingAuraFlow",
+            "pos": [
+                679.752128329076,
+                -1584.2262124266115
+            ],
+            "size": [
+                330,
+                60
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "model",
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 287
+                },
+                {
+                    "localized_name": "shift",
+                    "name": "shift",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "shift"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "MODEL",
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        268
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "ModelSamplingAuraFlow",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": [
+                3
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+        },
+        {
+            "id": 105,
+            "type": "MarkdownNote",
+            "pos": [
+                -135.13767172475943,
+                -1615.2095053579155
+            ],
+            "size": [
+                420,
+                360
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "## Model Links (for Local Users)\n\n**checkpoints**\n\n- [ace_step_1.5_turbo_aio.safetensors](https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files/resolve/main/checkpoints/ace_step_1.5_turbo_aio.safetensors)\n\n\n## Model Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   └── 📂 checkpoints/\n│       └── ace_step_1.5_turbo_aio.safetensors\n```\n\n## Report Issue\n\nNote: Please update ComfyUI first ([guide](https://docs.comfy.org/zh-CN/installation/update_comfyui)) and prepare required models. Desktop/Cloud ship stable builds; nightly-supported models may not be included yet, please wait for the next stable release.\n\n- Cannot run / runtime errors: [ComfyUI/issues](https://github.com/comfyanonymous/ComfyUI/issues)\n- UI / frontend issues: [ComfyUI_frontend/issues](https://github.com/Comfy-Org/ComfyUI_frontend/issues)\n- Workflow issues: [workflow_templates/issues](https://github.com/Comfy-Org/workflow_templates/issues)\n"
+            ],
+            "color": "#222",
+            "bgcolor": "#000"
+        },
+        {
+            "id": 121,
+            "type": "Label (rgthree)",
+            "pos": [
+                339.670254614484,
+                -1901.7576486393245
+            ],
+            "size": [
+                287,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "AceStep 1.5 ",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        },
+        {
+            "id": 113,
+            "type": "Text",
+            "pos": [
+                359.7521283290754,
+                -1284.2262124266115
+            ],
+            "size": [
+                238.64357130485064,
+                624.8665515869774
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": [
+                        274
+                    ]
+                }
+            ],
+            "title": "가사",
+            "properties": {
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "[Intro - 어쿠스틱 기타 아르페지오 & 브러시 드럼]\n(Mm… Yeah… Let it breathe…)\n[Verse 1]\n늦은 밤 네 곁에 스며드는 달빛\n창문 틈으로 새어 들어오는 도시의 낮은 숨소리\n식탁 위 놓인 잊혀진 커피 잔\n시간은 멈춘 듯, 그대로 고여있네\n나른한 킥 드럼처럼 느리게 뛰는 심장\n네 목소리는 속삭여, \"이대로도 괜찮아\"\n느린 걸음으로 다가가도\n우리는 결국 서로에게 닿았음을 느껴\n\n[Verse 2]\n네 웃음소리가 귓가에 맴돌아\n마치 박자 뒤에 숨은 듯, 아련하게\n꾸밈없이 솔직한 네 모습\n오늘 밤, 그게 나를 더 깊이 끌어당겨\n부드러운 브러시 터치처럼, 흘러가는 시간 속에\n진실이 깃들 수 있는 공간을 만들어\n만약 이대로 흘러간다 해도\n그것마저 우리의 이야기\n\n[Pre-Chorus]\n우리의 사랑엔 정해진 박자가 없어\n계산하지 않아\n그저 이 순간, 너에게 기대\n\n[Chorus]\n지금 여기, 그대로 머물러줘\n조금 늦더라도 괜찮아, 네 모습 그대로\n엇나간 듯 보이지만, 우리의 시간 속에\n이 느긋한 리듬이 나를 감싸 안아\n그래, 우린 흔들리고, 휘어지고, 춤을 춰\n내일은 잠시 잊고, 오늘에 집중해\n만약 우리의 사랑이 조금 비껴나가 있다면\n이 나른한 리듬 속, 네 손을 놓지 않아\n\n[Verse 3]\n낡은 레코드가 턴테이블 위에서 춤춰\n방 안 가득 채워지는 아련한 기억들\n떨리는 네 목소리가 들려와도\n그것이 너라는 걸 알아\n따뜻한 심장 소리가 나무와 선을 타고 흘러\n낮은 온기, 꺼지지 않는 불꽃처럼\n완벽하지 않아도, 흐릿해도\n그 모든 순간이 나에겐 소중해\n\n[Bridge]\n가볍게, 숨 쉬듯, 그 순간을 느껴\n내 마음이 닿을 수 있도록\n엇갈림마저도 우리를 완성하는 조각\n소울은 원래 그렇게 깊어지는 거야\n박자 뒤에서 들려오는 진심\n모든 순간이 너를 닮아 있어\n이 밤이 영원처럼 느껴진다면\n난 여기 너와 함께 머물 거야\n\n[Chorus]\n지금 여기, 그대로 머물러줘\n조금 늦더라도 괜찮아, 네 모습 그대로\n엇나간 듯 보이지만, 우리의 시간 속에\n이 느긋한 리듬이 나를 감싸 안아\n그래, 우린 흔들리고, 휘어지고, 춤을 춰\n내일은 잠시 잊고, 오늘에 집중해\n만약 우리의 사랑이 조금 비껴나가 있다면\n이 나른한 리듬 속, 네 손을 놓지 않아\n\n[Outro - 어쿠스틱 기타 페이드 아웃 & 마지막 \n코드]\n(No rush… No rush… Just groove…)"
+            ],
+            "color": "#232",
+            "bgcolor": "#353"
+        },
+        {
+            "id": 116,
+            "type": "SaveAudioMP3",
+            "pos": [
+                1144.2165785398665,
+                -1092.3260428994622
+            ],
+            "size": [
+                390.24185568402663,
+                155.9628692803276
+            ],
+            "flags": {},
+            "order": 14,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "audio",
+                    "name": "audio",
+                    "type": "AUDIO",
+                    "link": 277
+                },
+                {
+                    "localized_name": "filename_prefix",
+                    "name": "filename_prefix",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "filename_prefix"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "quality",
+                    "name": "quality",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "quality"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "audioUI",
+                    "name": "audioUI",
+                    "type": "AUDIO_UI",
+                    "widget": {
+                        "name": "audioUI"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "SaveAudioMP3",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                },
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65
+            },
+            "widgets_values": [
+                "audio/ComfyUI",
+                "V0"
+            ]
+        },
+        {
+            "id": 118,
+            "type": "Text",
+            "pos": [
+                -138.83276408895114,
+                -1200.5763336786515
+            ],
+            "size": [
+                445.90829277077734,
+                402.7959683613424
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "properties": {
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "clip (입력 핀): 이 핀은 \"clip\"이라는 이름의 입력을 받습니다. 아마도 오디오 파일의 일부(클립)나 특정 오디오 특징을 제공하는 데 사용될 수 있습니다. 이것이 CONDITIONING이라는 출력 핀과 연결되어 있어, 이 노드가 생성하는 오디오에 영향을 미치는 조건(condition)을 형성하는 데 사용됨을 시사합니다.\n\ntags (텍스트 입력 필드): 여기에 키워드나 태그를 입력하여 오디오 생성의 스타일, 장르, 악기 등을 지정할 수 있습니다. 예를 들어, \"k-pop dance\", \"emotional ballad\", \"male vocal\" 등과 같이 입력하여 생성될 오디오의 특징을 제어할 수 있습니다.\n\nlyrics (텍스트 입력 필드): 여기에 노래의 가사를 입력합니다. AI는 이 가사를 기반으로 멜로디와 리듬을 생성하거나, 가사에 맞는 보컬 스타일을 적용할 수 있습니다.\n\nseed (정수 입력): 난수 생성기의 시드(seed) 값입니다. 동일한 seed 값을 사용하면 동일한 설정으로도 항상 같은 결과를 얻을 수 있습니다. 이는 재현 가능한 결과를 얻거나, 특정 결과가 마음에 들었을 때 해당 seed 값을 저장해두고 다시 사용하는 데 유용합니다. 기본값은 0이며, 다른 값을 입력하여 다양한 결과값을 탐색할 수 있습니다.\n\ncontrol after generate (드롭다운/선택 필드): 이 설정은 오디오 생성 후 추가적인 제어 옵션을 제공하는 것으로 보입니다. \"fixed\"로 설정되어 있는데, 이는 생성된 오디오가 고정되어 추가적인 조절이 불가능하거나, 생성 시점에 이미 정해진 옵션대로만 처리됨을 의미할 수 있습니다. 다른 옵션이 있다면, 생성된 오디오에 대해 후처리나 변형을 가하는 옵션들이 있을 수 있습니다.\n\nbpm (정수 입력): Beats Per Minute의 약자로, 음악의 빠르기(템포)를 설정합니다. 120으로 설정되어 있어, 분당 120비트의 템포를 가진 음악이 생성될 것입니다.\n\nduration (실수 입력): 오디오의 총 길이를 초 단위로 설정합니다. 120.0으로 설정되어 있어, 120초(2분) 길이의 오디오가 생성됩니다.\n\ntimesignature (정수/선택 필드): 박자표를 설정합니다. 4/4 박자를 의미하는 '4'로 설정되어 있습니다. 이는 한 마디 안에 4분음표가 4개 들어가는 일반적인 박자입니다.\n\nlanguage (문자열/선택 필드): 오디오 생성에 사용될 언어를 지정합니다. 'ko'로 설정되어 있어, 한국어 가사나 텍스트에 맞춰 한국어 음성 또는 한국어 스타일에 맞는 음악이 생성될 것입니다.\n\nkeyscale (선택 필드): 음악의 조성을 지정합니다. 현재 'F minor' (F 단조)로 설정되어 있습니다. 이는 생성될 오디오의 멜로디와 화음이 F 단조를 중심으로 구성됨을 의미하며, 곡의 전반적인 분위기에 영향을 미칩니다."
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+        },
+        {
+            "id": 112,
+            "type": "TextEncodeAceStepAudio1.5",
+            "pos": [
+                649.7521283290761,
+                -1424.2262124266115
+            ],
+            "size": [
+                400,
+                310
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "clip",
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 272
+                },
+                {
+                    "localized_name": "tags",
+                    "name": "tags",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "tags"
+                    },
+                    "link": 288
+                },
+                {
+                    "localized_name": "lyrics",
+                    "name": "lyrics",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "lyrics"
+                    },
+                    "link": 274
+                },
+                {
+                    "localized_name": "seed",
+                    "name": "seed",
+                    "type": "INT",
+                    "widget": {
+                        "name": "seed"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "bpm",
+                    "name": "bpm",
+                    "type": "INT",
+                    "widget": {
+                        "name": "bpm"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "duration",
+                    "name": "duration",
+                    "type": "FLOAT",
+                    "widget": {
+                        "name": "duration"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "timesignature",
+                    "name": "timesignature",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "timesignature"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "language",
+                    "name": "language",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "language"
+                    },
+                    "link": null
+                },
+                {
+                    "localized_name": "keyscale",
+                    "name": "keyscale",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "keyscale"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "CONDITIONING",
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        267,
+                        269
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.12.2",
+                "Node name for S&R": "TextEncodeAceStepAudio1.5",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "",
+                "",
+                0,
+                "fixed",
+                120,
+                120,
+                "4",
+                "ko",
+                "E minor"
+            ],
+            "color": "#232",
+            "bgcolor": "#353"
+        },
+        {
+            "id": 97,
+            "type": "CheckpointLoaderSimple",
+            "pos": [
+                336.4178421399546,
+                -1791.1485503173055
+            ],
+            "size": [
+                428.09895833333337,
+                98
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "ckpt_name",
+                    "name": "ckpt_name",
+                    "type": "COMBO",
+                    "widget": {
+                        "name": "ckpt_name"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "MODEL",
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        287
+                    ]
+                },
+                {
+                    "localized_name": "CLIP",
+                    "name": "CLIP",
+                    "type": "CLIP",
+                    "links": [
+                        272
+                    ]
+                },
+                {
+                    "localized_name": "VAE",
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                        276
+                    ]
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.1",
+                "Node name for S&R": "CheckpointLoaderSimple",
+                "models": [
+                    {
+                        "name": "ace_step_1.5_turbo_aio.safetensors",
+                        "url": "https://huggingface.co/Comfy-Org/ace_step_1.5_ComfyUI_files/resolve/main/checkpoints/ace_step_1.5_turbo_aio.safetensors",
+                        "directory": "checkpoints"
+                    }
+                ],
+                "enableTabs": false,
+                "tabWidth": 65,
+                "tabXOffset": 10,
+                "hasSecondTab": false,
+                "secondTabText": "Send Back",
+                "secondTabOffset": 80,
+                "secondTabWidth": 65,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "version": "7.5.2",
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "widgets_values": [
+                "ace_step\\ace_step_1.5_turbo_aio.safetensors"
+            ],
+            "color": "#223",
+            "bgcolor": "#335"
+        },
+        {
+            "id": 120,
+            "type": "Text",
+            "pos": [
+                364.2386804587428,
+                -1624.9355544316832
+            ],
+            "size": [
+                236.32182542381838,
+                130.3497597537836
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": []
+                }
+            ],
+            "title": "분위기 - 영문",
+            "properties": {
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                },
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text"
+            },
+            "widgets_values": [
+                "Mood: A ballad that retains the warm, organic feel of the original, but with a more emotional and profound resonance. The delicate live instrumentation and the sorrowful vocals harmonize."
+            ],
+            "color": "#232",
+            "bgcolor": "#353"
+        },
+        {
+            "id": 114,
+            "type": "Text",
+            "pos": [
+                363.995944381753,
+                -1455.5046635259735
+            ],
+            "size": [
+                236.32182542381838,
+                130.3497597537836
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "localized_name": "text",
+                    "name": "text",
+                    "type": "STRING",
+                    "widget": {
+                        "name": "text"
+                    },
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "localized_name": "STRING",
+                    "name": "STRING",
+                    "type": "STRING",
+                    "links": [
+                        288
+                    ]
+                }
+            ],
+            "title": "분위기 - 한글",
+            "properties": {
+                "cnr_id": "kaytool",
+                "ver": "0.70.17",
+                "Node name for S&R": "Text",
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {},
+                    "version": "7.5.2"
+                }
+            },
+            "widgets_values": [
+                "분위기: 원곡의 따뜻하고 유기적인 느낌을 유지하면서, 더욱 감성적이고 깊은 울림을 주는 발라드. 라이브 악기의 섬세한 연주와 보컬의 애절함이 조화를 이룬다."
+            ],
+            "color": "#232",
+            "bgcolor": "#353"
+        },
+        {
+            "id": 122,
+            "type": "Label (rgthree)",
+            "pos": [
+                831.6464836840047,
+                -1738.1737361178482
+            ],
+            "size": [
+                957,
+                50
+            ],
+            "flags": {
+                "allow_interaction": true
+            },
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [],
+            "title": "한글 가사 사용시 - 분위기를 한글로 사용할 것 ",
+            "properties": {
+                "fontSize": 50,
+                "fontFamily": "Arial",
+                "fontColor": "#ffffff",
+                "textAlign": "left",
+                "backgroundColor": "transparent",
+                "padding": 0,
+                "borderRadius": 0,
+                "angle": 0,
+                "ue_properties": {
+                    "widget_ue_connectable": {},
+                    "input_ue_unconnectable": {}
+                }
+            },
+            "color": "#fff0",
+            "bgcolor": "#fff0"
+        }
+    ],
+    "links": [
+        [
+            267,
+            112,
+            0,
+            110,
+            0,
+            "CONDITIONING"
+        ],
+        [
+            268,
+            109,
+            0,
+            111,
+            0,
+            "MODEL"
+        ],
+        [
+            269,
+            112,
+            0,
+            111,
+            1,
+            "CONDITIONING"
+        ],
+        [
+            270,
+            110,
+            0,
+            111,
+            2,
+            "CONDITIONING"
+        ],
+        [
+            271,
+            117,
+            0,
+            111,
+            3,
+            "LATENT"
+        ],
+        [
+            272,
+            97,
+            1,
+            112,
+            0,
+            "CLIP"
+        ],
+        [
+            274,
+            113,
+            0,
+            112,
+            2,
+            "STRING"
+        ],
+        [
+            275,
+            111,
+            0,
+            115,
+            0,
+            "LATENT"
+        ],
+        [
+            276,
+            97,
+            2,
+            115,
+            1,
+            "VAE"
+        ],
+        [
+            277,
+            115,
+            0,
+            116,
+            0,
+            "AUDIO"
+        ],
+        [
+            287,
+            97,
+            0,
+            109,
+            0,
+            "MODEL"
+        ],
+        [
+            288,
+            114,
+            0,
+            112,
+            1,
+            "STRING"
+        ]
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "title": "Group",
+            "bounding": [
+                349.7521283290754,
+                -1657.8262124266114,
+                1208.8003948236756,
+                1008.4665515869774
+            ],
+            "color": "#3f789e",
+            "font_size": 24,
+            "flags": {}
+        }
+    ],
+    "config": {},
+    "extra": {
+        "ds": {
+            "scale": 1.1581676398064262,
+            "offset": [
+                305.10739984207714,
+                1830.9435737043639
+            ]
+        },
+        "frontendVersion": "1.37.11",
+        "workflowRendererVersion": "LG",
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true,
+        "ue_links": [],
+        "links_added_by_ue": []
+    },
+    "version": 0.4
+}
